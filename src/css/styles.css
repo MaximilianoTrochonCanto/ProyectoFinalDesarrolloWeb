@@ -1,0 +1,614 @@
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Klee";
+    src: url(../fonts/KleeOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Delius";
+    src: url(../fonts/Delius-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Solitreo";
+    src: url(../fonts/Solitreo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Parisiene";
+    src: url(../fonts/Parisienne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MondayMiracle';
+    src: url(../fonts/Monday\ Miracle\ Alternate.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+*{
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    animation: fadeIn 1.5s;
+    
+}
+
+header h1{
+    font-family: 'Parisiene';
+    text-align: center;
+        
+    font-size: 8rem;
+    color: #b3426d;
+    margin: 1%;
+
+}
+
+
+
+header, nav{
+    background-color: rgb(252.5, 217.5, 180, .3);
+}
+
+header{
+    padding: 5px 0 10px 0;
+    text-align: center;    
+
+}
+
+nav{    
+    padding-top: 3px;
+    text-align: center;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding: 3px auto 0;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;    
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+nav ul li{
+    
+    width: 15%;
+    height: 35px;
+    /* background-color: rgb(255, 255, 255); */
+    background-color:  rgb(250, 248, 217,.8);
+    line-height: 40px;
+    border-radius: 10px;    
+    
+    
+    
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: #d64d74;
+    
+}
+
+
+
+
+
+ 
+
+nav ul :hover {
+    background-color: #fdf5e7;
+    color:#9e3955;
+    transform: scale(1.03);
+}
+
+body{
+    
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position-x: 100%;
+    background-position-y: -5px;
+}
+
+.bodycontacto{
+    background-image: url(../images/background2.png);
+    background-size: cover;
+    background-position-x: -200;
+    backdrop-filter: blur(5px);
+    
+}
+
+main{
+        
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.5);    
+}
+
+.profe{
+    background-color: rgb(0,0,0,0);
+}
+
+.profe aside{
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 3%;
+}
+
+.profe p{
+ font-family: 'Patrick Hand', cursive ;   
+}
+
+
+.ballerobica p, .ballerobica h1{
+    text-align: center;
+}
+
+.ballerobica {
+    line-height: 180%;
+}
+
+.ballerobica{
+    padding: 3%;
+    background-color: rgb(255, 255, 255,0);    
+    width: 70vw;
+    
+}
+
+.ballerobica__card__container{
+    display: flex;
+    margin-top: 3%;
+}
+
+.ballerobica__card__container:nth-of-type(1){
+    margin-left: 20%;
+}
+
+.ballerobica__card h1{
+    font-family: "Parisiene";
+    font-size: 5vh;
+    border-bottom: 1px solid black;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
+.ballerobica h1:hover{
+    transform: translateX(10px);
+}
+
+
+.ballerobica article{
+    width: 90%;
+    margin: 0 5%;
+   
+}
+
+.ballerobica img{    
+    width: 77%;
+    border-radius: 90% 10%;
+}
+
+.ballerobica section{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ballerobica aside{   
+    margin-top: 2%; 
+    width: 60%;    
+}
+
+.ballerobica ul li{
+    list-style-type: "\1F7CA";
+}
+
+
+.profe article{
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;    
+}
+
+
+.profe{
+    text-align: center;    
+}
+
+.profe h1{
+    font-size: 40px;    
+    font-family: "Solitreo";
+    color: #46304d;
+    border-bottom: 1px solid #46304d;;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.profe h1{
+    transition-property:transform;
+    transform-origin:0px;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.profe h1:hover{
+    transform: translateY (10px);
+}
+
+
+
+
+
+
+
+
+.profe img{
+    margin-top: 3%;
+    width: 100%;
+}
+
+.profe a{
+    color: black;
+}
+
+    footer{
+    height: 17vh;
+    background-color: #9384d1;
+    text-align: center;        
+    justify-content: space-around;
+    }
+
+    footer img{
+        align-items: center;
+        justify-content: center;
+        margin: 2% 3%;
+        width: 4%;
+        transition-duration: 0.4s;
+    }
+
+    footer img:hover{
+        transform: scale(1.1);
+    }
+    
+.certs{
+    padding: 2% 0px;
+    margin: 0 1%;
+    border-top: 1px solid #9384d1;
+    
+}
+
+.certs h1, .formsection h1{
+    letter-spacing: 2px;    
+    color: #615788;
+    font-family: "Delius";
+}
+    .certs article{
+        display: inline-block;
+        width: 25%;
+        padding: 1%;
+        border: 1px solid #9384d1;
+        background-color: rgba(255, 255, 255, .7);
+        border-radius: 4%;
+        margin: 0 2% 5%;
+        transition-property:all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        
+    }
+
+    .certs article:hover{
+        transform: scale(1.5)
+    }
+
+    .certs article h1{
+        font-size:80%;
+    }
+
+    
+
+
+.formsection{
+    text-align: center;
+}
+
+.formsection h1{
+    padding: 2% 0;
+    font-size: 40px;
+}
+
+form fieldset{
+    width: 70%;
+    border-radius: 3%;
+}
+
+form fieldset div{
+    width: 25vw;
+    
+}
+
+form label{
+    width: 40%;
+}
+
+form .labelN, form .labelDH{
+    font-size: 80%;
+} 
+
+form input, form select, form textarea{
+    margin-top: 4% ;    
+    background-color: #ffa1bb;
+    border: 1px solid gray;
+    border-radius: 2%;
+
+}
+
+form input{
+    width: 70%;
+}
+
+form textarea{
+    resize: none;
+    display: flex;    
+    width: 86%;
+    height: 30vh;
+}
+
+
+
+
+button{
+    border: 2px solid black;
+    padding: 1% 4%;
+    margin: 4% 2%;   
+    background-color:  #d3708c;
+    
+}
+
+form button:hover{
+    background-color: #d64d74;
+}
+
+
+form select{
+    width: 68%;
+}
+
+
+.ejercicios{
+    background-image: url(../images/background3.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.ejercicos .tipoEjercicio{
+    display: flex;
+    
+}
+
+.ejercicios .tipoEjercicio ul{
+    
+    display: flex;
+    justify-content: center;
+    list-style-type: none;  
+    padding: 2% 0;
+    border-bottom: 1px solid black ;
+}
+
+
+
+.ejercicios .tipoEjercicio ul li a{
+    text-decoration: none;
+    color: gray
+}
+
+.ejercicios .tipoEjercicio ul li a  :hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+.ejercicios section h1, .blog section h1{
+    text-decoration: underline;
+    font-family: "Solitreo";
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.ejercicios article{
+    padding: 3% 2%;
+    
+    border-bottom: 1px solid black;
+}
+
+.ejercicios article h1{
+    font-family: "Klee";
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+}
+
+.ejercicios article div{
+    display: flex;
+    flex-direction: row; 
+    justify-content:end;
+    margin: 2% 0 ;   
+    flex-wrap: nowrap;
+}
+
+
+
+.ejercicios article div img{
+    width: 20%;
+    border-radius: 4%;
+}
+
+.ejercicios article p{
+margin-top: 2%;
+ width: 70%;  
+ font-size: smaller; 
+}
+
+.blog{
+    background-image: url(../images/Background4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -100px;
+    backdrop-filter: blur(5px);
+}
+
+.blog section{
+    padding: 1% 6%;
+}
+
+
+.blog section article h1{
+    font-family: "Klee";
+    font-size:30px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: #46304d;
+}
+
+.blog section article{
+    background-color: rgba(255, 255, 255, .5);
+    margin-top: 5%;
+    padding: 1%;
+    line-height: 2.5rem;
+    border-radius: 2%;
+}
+
+@media (max-width:1018px) and (min-width:840px){
+    
+   
+    body{
+       background-size: 2000px;
+       background-position-x: -900px;
+     
+    }
+       nav ul li a{
+           font-size: 10px;
+       }
+   }
+
+   @media (max-width:840px){
+    nav ul li a{
+    font-size: 8px; 
+    }
+
+    /* header h1{
+        font-size: 40px;
+    } */
+}
+
+
+@media (max-width:572px){
+    nav ul li a{
+        font-size: 5px;
+    }
+
+
+}
+
+/* @media (max-width:422px) and (min-width:363px) {
+
+    header h1{
+        font-size: 43px;
+    }
+
+} */
+
+/* @media (max-width:363px){
+    header h1{
+        font-size: 30px;
+    }
+
+} */
+
+@media (max-width:1024px) and (min-width:768px){
+    body{
+        backdrop-filter: blur(2px);
+        
+    }
+    
+}
+
+@media (max-width:768px) and (min-width:320px){
+    body{
+        background-image: url(../images/BackgroundMobile1.png);
+        backdrop-filter: blur(2px);
+    }
+
+    .ballerobica h1{
+        color: #9e3955;
+    }
+
+    .ballerobica aside, .ballerobica article{
+        background-color: rgb(255, 255, 255, .5);
+        padding: 10%;
+        
+    }
+}
+
+
+ @media (max-width:1080px) and (min-width:768px){
+    
+
+    header h1{
+        font-size: 5rem;
+    }
+
+}  
+
+@media (max-width:768px) and (min-width:320px){
+
+    header h1{
+        font-size:4rem;
+    }
+
+    .ballerobica section:nth-child(2){
+        display: grid;
+        grid-template-rows: repeat(2,500px);
+    }
+    
+    
+
+    .ballerobica{
+        display: grid;
+        margin: 0 auto;
+
+    }
+
+    .ballerobica__card{
+
+        height: 40rem;
+    }
+
+    .ballerobica__card--img{
+        display: none;
+    }
+}
+
+
