@@ -44,20 +44,30 @@
     
 }
 
-header h1{
+header h1, nav h1{
     font-family: 'Parisiene';
-    text-align: center;
-        
-    font-size: 8rem;
+    text-align: center;        
+    font-size: 6rem;
     color: #b3426d;
     margin: 1%;
-
 }
 
 
 
+nav h1{
+    color: white !important;
+    font-size: 4rem !important;
+    
+    
+}
+
+.nav div:nth-child(2){
+    text-align: left;
+}
+
+
 header, nav{
-    background-color: rgb(252.5, 217.5, 180, .3);
+    background-color: rgb(252.5, 217.5, 180, .3) !important;
 }
 
 header{
@@ -67,29 +77,24 @@ header{
 }
 
 nav{    
-    padding-top: 3px;
-    text-align: center;
-    position: sticky;
-    display: flex;
-    align-items: center;
+    padding-top: 3px;    
     top: 0;
     padding: 3px auto 0;
-    justify-content: center;
+    
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
+nav ul{    
     list-style-type: none;    
     width: 100%;
-    padding-bottom: 1%;
+    margin: 5px;
+    
+    padding: 15px;
+    
 }
 
 nav ul li{
     
-    width: 15%;
-    height: 35px;
-    /* background-color: rgb(255, 255, 255); */
+            
     background-color:  rgb(250, 248, 217,.8);
     line-height: 40px;
     border-radius: 10px;    
@@ -100,7 +105,9 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #d64d74;
+    
     
 }
 
@@ -110,10 +117,11 @@ nav ul li a{
 
  
 
-nav ul :hover {
+nav ul a:hover {
     background-color: #fdf5e7;
     color:#9e3955;
-    transform: scale(1.03);
+    padding: 10px !important;
+    transform: scale(1.03) !important;
 }
 
 body{
@@ -188,6 +196,7 @@ main{
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 
 
 .ballerobica h1:hover{
@@ -270,11 +279,8 @@ main{
     color: black;
 }
 
-    footer{
-    height: 17vh;
-    background-color: #9384d1;
-    text-align: center;        
-    justify-content: space-around;
+    footer {    
+    background-color: #9384d1;        
     }
 
     footer img{
@@ -499,7 +505,43 @@ margin-top: 2%;
     border-radius: 2%;
 }
 
-@media (max-width:1018px) and (min-width:840px){
+@media (max-width:992px){
+    .nav{
+        background-color:#9e3955;
+        color:white;
+    }
+
+
+.navbar-collapse{
+    border-top: 1px solid white;    
+}
+
+
+    .nav ul li {
+        
+        background-color: rgb(0,0,0,0); 
+        padding:10px;
+    };
+
+    nav ul li a{
+        font-size: 2rem !important;
+    }
+
+}
+
+@media (max-width:663px){
+    nav h1{
+        font-size: 2.5rem !important;
+    }
+
+    nav ul li a{
+        font-size: 2rem !important;
+    }
+
+
+}
+
+/* @media (max-width:1018px) and (min-width:840px){
     
    
     .bodyballerobica{
@@ -520,9 +562,9 @@ margin-top: 2%;
     /* header h1{
         font-size: 40px;
     } */
-}
+/*}
 
-
+/* 
 @media (max-width:572px){
     nav ul li a{
         font-size: 5px;
@@ -571,16 +613,14 @@ margin-top: 2%;
     }
 }
 
-
- @media (max-width:1080px) and (min-width:768px){
-    
-
-    header h1{
-        font-size: 5rem;
+@media (max-width:769px){
+    nav ul li{
+        background-color: rgba(255, 255, 255, 0,1) !important;
     }
+}
 
-}  
 
+/*
 @media (max-width:768px) and (min-width:320px){
 
     header h1{
@@ -607,7 +647,4 @@ margin-top: 2%;
 
     .ballerobica__card--img{
         display: none;
-    }
-}
-
-
+    
