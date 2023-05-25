@@ -61,10 +61,6 @@ nav h1{
     
 }
 
-.nav div:nth-child(2){
-    text-align: left;
-}
-
 
 header, nav{
     background-color: rgb(252.5, 217.5, 180, .3) !important;
@@ -404,24 +400,20 @@ form select{
     background-image: url(../images/background3.jpg);
     background-size: cover;
     background-attachment: fixed;    
-    text-align: center;
+    
     backdrop-filter: blur(2px);
 }
 
-.ejercicos .tipoEjercicio{
-    display: flex;
-    
-}
 
-.ejercicios .tipoEjercicio ul{
-    
-    display: flex;
-    justify-content: center;
-    list-style-type: none;  
-    padding: 2% 0;
+
+.ejercicios .tipoEjercicio ul{                
     border-bottom: 1px solid black ;
+    list-style-type: none;
 }
 
+.tipoEjercicio ul{
+    display: flex;
+}
 
 
 .ejercicios .tipoEjercicio ul li a{
@@ -456,18 +448,14 @@ form select{
     border: none;
 }
 
-.ejercicios article div{
-    display: flex;
-    flex-direction: row; 
-    justify-content:end;
-    margin: 2% 0 ;   
-    flex-wrap: nowrap;
+.carousel img{
+    width: 50% !important;
 }
 
 
 
 .ejercicios article div img{
-    width: 20%;
+    width: 70%;
     border-radius: 4%;
 }
 
@@ -507,8 +495,7 @@ margin-top: 2%;
 
 @media (max-width:992px){
     .nav{
-        background-color:#9e3955;
-        color:white;
+        background-color:#9e3955;        
     }
 
 
@@ -529,6 +516,11 @@ margin-top: 2%;
 
 }
 
+@media (min-width:991px){
+    nav ul li a {
+        color: #d64d74 !important;
+    }
+}
 @media (max-width:663px){
     nav h1{
         font-size: 2.5rem !important;

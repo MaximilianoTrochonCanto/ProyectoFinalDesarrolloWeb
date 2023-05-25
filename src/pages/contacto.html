@@ -50,8 +50,76 @@
       </nav>
     <main>
         <section class="formsection">
-            <h1>Te interesa hacer clase?</h1>            
-                <form action="" method="get" enctype="application/x-www-form-urlencoded">
+            <h1>Te interesa hacer clase?</h1>   
+            <form>
+                <div class="row m-1">
+                    <label for="inputNombre" class="col-lg-2 col-form-label">Nombre</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputNombre">
+                    </div>
+                  </div>
+                <div class="row m-1">
+                    <label for="inputEmail" class="col-lg-2 col-form-label">Email</label>
+                    <div class="col-lg-10">
+                      <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <label for="validationDefault04" class="col-lg-2 col-form-label">Agendar</label>
+                    <select class="col-lg-10 form-select" id="validationDefault04" required>
+                      <option selected disabled value="">Selecciona día y hora...</option>
+                      <option value="1">Lunes - 14:00 - 15:00</option>
+                                  <option value="2">Lunes - 17:00 - 18:00</option>
+                                  <option value="3">Lunes - 19:30 - 20:30</option>
+                                  <option value="4">Martes - 09:00 - 10:00</option>
+                                  <option value="5">Martes - 12:00 - 13:00</option>
+                                  <option value="6">Miércoles - 13:00 - 14:00</option>
+                                  <option value="7">Miércoles - 14:30 - 15:30</option>
+                    </select>
+                    <div class="text-center">
+                        <button class="mt-4 col-3" type="submit">Enviar</button>
+                    </div>
+                  </div>
+                </form>
+                <!-- <div class="col-lg-4">
+                  <label for="validationDefault01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                </div>
+                <div class="col-lg-4">
+                  <label for="validationDefault02" class="form-label">Telefono</label>
+                  <input type="number" class="form-control" id="validationDefault02" value="Otto" required>
+                </div>
+                <div class="col-lg-4">
+                  <label for="validationDefaultUsername" class="form-label">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>                
+                <div class="col-lg-6">
+                  <label for="validationDefault04" class="form-label">Agendar</label>
+                  <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Selecciona día y hora...</option>
+                    <option value="1">Lunes - 14:00 - 15:00</option>
+                                <option value="2">Lunes - 17:00 - 18:00</option>
+                                <option value="3">Lunes - 19:30 - 20:30</option>
+                                <option value="4">Martes - 09:00 - 10:00</option>
+                                <option value="5">Martes - 12:00 - 13:00</option>
+                                <option value="6">Miércoles - 13:00 - 14:00</option>
+                                <option value="7">Miércoles - 14:30 - 15:30</option>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="validationDefault05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>          -->
+                <!-- <form action="" method="get" enctype="application/x-www-form-urlencoded">
                     <fieldset>
                         <legend>Contactame!</legend>
                         <div>
@@ -83,7 +151,7 @@
                         </div>
                         <button type="submit">Enviar</button>
                     </fieldset>
-                </form>                
+                </form>                 -->
             
         </section>                
     </main>
