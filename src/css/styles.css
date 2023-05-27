@@ -29,7 +29,13 @@
     src: url(../fonts/Monday\ Miracle\ Alternate.otf);
 }
 
+@font-face {
+    font-family: 'KalamBold';
+    src: url(../fonts/Kalam-Bold.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -63,8 +69,12 @@ nav h1{
 }
 
 
-header, nav{
+header{
     background-color: rgb(252.5, 217.5, 180, .3) !important;
+}
+
+nav{
+    background-color:rgb(158, 57, 85,0.8); 
 }
 
 header{
@@ -89,10 +99,7 @@ nav ul{
     
 }
 
-nav ul li{
-    
-            
-    background-color:  rgb(250, 248, 217,.8);
+nav ul li{                    
     line-height: 40px;
     border-radius: 10px;    
     
@@ -103,9 +110,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #d64d74;
-    
-    
+    color: white !important;        
 }
 
 
@@ -114,10 +119,10 @@ nav ul li a{
 
  
 
-nav ul a:hover {
+nav ul li a:hover {
     background-color: #fdf5e7;
-    color:#9e3955;
-    padding: 10px !important;
+    color: #9e3955 !important;
+    
     transform: scale(1.03) !important;
 }
 
@@ -126,7 +131,7 @@ body{
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    backdrop-filter: blur(5px);
     background-position-x: 100%;
     background-position-y: -5px;
 }
@@ -165,27 +170,35 @@ main{
 
 .ballerobica {
     line-height: 180%;
-}
-
-.ballerobica{
-    padding: 3%;
+        padding: 3%;
     background-color: rgb(255, 255, 255,0);    
-    width: 70vw;
+    
     
 }
 
+
 .ballerobica__card__container{
-    display: flex;
+    
     margin-top: 3%;
+    
 }
 
-.ballerobica__card__container:nth-of-type(1){
-    margin-left: 20%;
+.ballerobica__card{
+    border-radius: 5%;
+}
+
+.ballerobica__card p, .ballerobica__card li{
+    font-family: 'KalamBold';
+}
+
+.video{
+    height: 50%;
+    margin-bottom: 40%;
 }
 
 .ballerobica__card h1{
     font-family: "Parisiene";
-    font-size: 5vh;
+    font-size: 6vh;
     border-bottom: 1px solid black;
 
     transition-property: transform;
@@ -200,46 +213,57 @@ main{
     transform: translateX(10px);
 }
 
-
-.ballerobica article{
-    width: 90%;
-    margin: 0 5%;
-   
-}
-
-.ballerobica img{    
-    width: 77%;
-    border-radius: 90% 10%;
-}
-
-.ballerobica section{
-    display: flex;
-    flex-direction: row;
+.ballerobica__card{
+    background-color: rgb(255, 255, 255, .5);
+    padding: 1%;
     
 }
 
-.ballerobica aside{   
-    margin-top: 2%; 
-    width: 60%;    
+
+
+.ballerobica img{    
+    width: 77%;
+    border-radius: 70%;
+    
 }
+
+
+
 
 .ballerobica ul li{
     list-style-type: "\1F7CA";
 }
 
 
-.profe article{
-    
-    text-align: center;
-    margin-top: 500px;
+.profe{    
+    text-align: center;    
     padding: 30px;  
     background-color: rgb(250, 235, 215,0.5);  
 }
 
 
-.profe{
-    text-align: center;    
+
+
+.profe__foto{
+    background-image: url(../images/foto3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 300px;
 }
+
+.profe__foto__2{
+    background-image: url(../images/foto4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.profe__article{
+    background-color: white;
+    padding: 6% 3%;
+}
+
+
 
 .profe h1{
     font-size: 40px;    
@@ -318,12 +342,17 @@ main{
 #certs article {
     width: 32%;             
 }
-    #certs article, .certificado, .carousel {
+
+    .certificado, #certs h1{
+        border: 1px solid #9384d1;
+        background-color: rgba(255, 255, 255, .7) !important;
+        border-radius: 4%;
+    }
+
+    .certificado,  .carousel , .ejercicios img{
         
         padding: 1%;
-        border: 1px solid #9384d1;
-        background-color: rgba(255, 255, 255, .7);
-        border-radius: 4%;        
+                
         transition-property:all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
@@ -334,7 +363,7 @@ main{
         width: 80%;
     }
 
-    .certificado:hover{
+    .certificado:hover, .ejercicios img:hover{
         transform: scale(1.3)
     }
 
@@ -383,12 +412,7 @@ form input{
     width: 70%;
 }
 
-form textarea{
-    resize: none;
-    display: flex;    
-    width: 86%;
-    height: 30vh;
-}
+
 
 
 
@@ -494,7 +518,7 @@ margin-top: 2%;
 .blog-grid{
     display: grid;
     margin-left: 10px;
-    grid-template-columns:45% 55%;    
+    grid-template-columns:repeat(2,50%)    
 
 }
 
@@ -507,6 +531,9 @@ margin-top: 2%;
     margin: 10px;
 }
 
+.profe{
+    text-align: center;    
+}
 
 .blog section article h1{
     font-family: "Klee";
@@ -525,8 +552,15 @@ margin-top: 2%;
 }
 
 @media (max-width:991px){
-    .nav{
-        background-color:#9e3955;        
+   
+    .profe__foto{
+        height: 40vh;
+        background-position: 0;
+    }
+
+    .profe__article__last{
+        margin: 0;
+        background-color: rgb(255, 255, 255,0);
     }
 
     .blog-grid{
@@ -543,19 +577,18 @@ margin-top: 2%;
         
         background-color: rgb(0,0,0,0); 
         padding:10px;
+        
     };
+    
+   
 
-    nav ul li a{
-        font-size: 2rem !important;
+
+    .nav-item{
+        font-size: 2rem !important;        
     }
 
 }
 
-@media (min-width:991px){
-    nav ul li a {
-        color: #d64d74 !important;
-    }
-}
 @media (max-width:688px){
     nav h1{
         font-size: 2.5rem !important;
@@ -565,6 +598,7 @@ margin-top: 2%;
         font-size: 2rem !important;
     }
 
+    
 
 }
 
@@ -631,19 +665,20 @@ margin-top: 2%;
     }
 
     .ballerobica h1{
-        color: #9e3955;
+        color: #501c2b;
     }
 
-    .ballerobica aside, .ballerobica article{
-        background-color: rgb(255, 255, 255, .5);
-        padding: 10%;
-        
-    }
+
 }
 
 @media (max-width:769px){
     nav ul li{
         background-color: rgba(255, 255, 255, 0,1) !important;
+    }
+
+    .profe__foto{
+        height: 40vh;
+        background-position: 0;
     }
 }
 
