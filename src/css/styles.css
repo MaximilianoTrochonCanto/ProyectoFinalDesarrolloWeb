@@ -108,7 +108,7 @@ nav ul li{
 } 
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration:solid;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white !important;        
 }
@@ -117,12 +117,10 @@ nav ul li a{
 
 
 
- 
 
 nav ul li a:hover {
     background-color: #fdf5e7;
-    color: #9e3955 !important;
-    
+    color: #9e3955 !important;    
     transform: scale(1.03) !important;
 }
 
@@ -598,6 +596,9 @@ margin-top: 2%;
         font-size: 2rem !important;
     }
 
+    .blog main{
+        width: 100%;
+    }
     
 
 }
@@ -680,6 +681,7 @@ margin-top: 2%;
         height: 40vh;
         background-position: 0;
     }
+
 }
 
 
