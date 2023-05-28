@@ -783,7 +783,8 @@ margin-top: 2%;
 
     .profe__foto{
         height: 25vh;
-        background-position-x: -100;
+        background-position-x: -100px;
+        
     }
 
 }
