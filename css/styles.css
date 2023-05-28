@@ -34,7 +34,7 @@
     src: url(../fonts/Kalam-Bold.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 
 
 @keyframes fadeIn {
@@ -159,7 +159,7 @@ main{
 }
 
 .profe p{
- font-family: 'Patrick Hand', cursive ;   
+ font-family: 'Roboto'  
 }
 
 
@@ -788,7 +788,7 @@ margin-top: 2%;
 
     .profe__foto{
         height: 25vh;
-        background-position-x: -100px;
+        background-position-x: -200px;
         
     }
 
