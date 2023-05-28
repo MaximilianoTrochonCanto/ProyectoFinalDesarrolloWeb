@@ -783,7 +783,7 @@ margin-top: 2%;
 
     .profe__foto{
         height: 30vh;
-        background-position-x: -700px;
+        background-position-x: -400px;
     }
 
 }
@@ -822,7 +822,7 @@ margin-top: 2%;
 
     @media (max-width:444px){
         nav h1{
-            font-size: 1rem !important;
+            font-size: 1.5rem !important;
         }   
     }
 
