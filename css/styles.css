@@ -137,16 +137,11 @@ body{
 .bodycontacto{
     background-image: url(../images/background2.png);
     background-size: cover;
-    background-attachment: fixed;
-    background-position-x: -200;
+    background-attachment: fixed;    
     backdrop-filter: blur(5px);
     
 }
 
-.bodycontacto main{
-    margin-bottom: 15%;
-    
-}
 
 main{
         
@@ -852,6 +847,6 @@ margin-top: 2%;
         }
 
         .formsection{
-            height: 200vh;
+            height: 20vh;
         }
     }
