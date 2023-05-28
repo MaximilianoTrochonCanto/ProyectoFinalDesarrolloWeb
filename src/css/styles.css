@@ -137,6 +137,7 @@ body{
 .bodycontacto{
     background-image: url(../images/background2.png);
     background-size: cover;
+    background-attachment: fixed;
     background-position-x: -200;
     backdrop-filter: blur(5px);
     
@@ -196,7 +197,7 @@ main{
 
 .ballerobica__card h1{
     font-family: "Parisiene";
-    font-size: 6vh;
+    font-size: 7vh;
     border-bottom: 1px solid black;
 
     transition-property: transform;
@@ -243,14 +244,14 @@ main{
 
 
 .profe__foto{
-    background-image: url(../images/foto3.jpg);
+    background-image: url(../images/foto3_auto_x2.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position-x: 300px;
 }
 
 .profe__foto__2{
-    background-image: url(../images/foto4.jpg);
+    background-image: url(../images/foto4_auto_x2.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -415,11 +416,12 @@ form input{
 
 
 
-button{
+.btnblog, form button{
     border: 2px solid black;
     padding: 1% 4%;
-    margin: 4% 2%;   
-    background-color:  #d3708c;    
+    margin: 1% 2%;  
+    color: black !important; 
+    background-color:  #d3708c !important;    
 }
 
 button:hover{
@@ -513,10 +515,15 @@ margin-top: 2%;
     backdrop-filter: blur(5px);
 }
 
+
+
 .blog-grid{
-    display: grid;
-    margin-left: 10px;
-    grid-template-columns:repeat(2,50%)    
+    display: grid;    
+    grid-template-columns:40% 60%;
+    grid-template-rows:27% 37% 36%;    
+    column-gap: 2%;
+    row-gap: 1%;
+    padding-bottom: 10%;
 
 }
 
@@ -526,27 +533,65 @@ margin-top: 2%;
 }
 
 .blog-article{
-    margin: 10px;
+    height: 100%;
+    
 }
+
+.blog-article p{
+    font-size: 0.65rem;
+    line-height: 1rem;
+}
+
 
 .profe{
     text-align: center;    
 }
 
+.blog main{
+    padding-bottom: 40px;
+}
+
 .blog section article h1{
     font-family: "Klee";
-    font-size:30px;
+    font-size:20px;
     text-decoration: none;
     border-bottom: 1px solid black;
     color: #46304d;
 }
 
 .blog section article{
-    background-color: rgba(255, 255, 255, .5);
-    margin-top: 5%;
+    background-color: rgba(255, 255, 255, .5);    
     padding: 1%;
     line-height: 2.5rem;
     border-radius: 2%;
+}
+
+@media (min-width:992px) {
+    
+.blog-grid .blog-article:first-child{
+    grid-row: 1 / 3;
+    grid-column: 1;
+    
+}
+
+.blog-grid .blog-article:nth-child(4){
+    grid-row:1;    
+    grid-column: 2;
+    height: 100%;
+}
+
+.blog-grid .blog-article:nth-child(3){
+    grid-row: 2;
+    grid-column: 2;     
+     margin-top: 1fr;
+}
+
+
+.blog-grid .blog-article:nth-child(2){
+    grid-row: 3;
+    grid-column: 1/3;
+    
+}
 }
 
 @media (max-width:991px){
@@ -561,10 +606,24 @@ margin-top: 2%;
         background-color: rgb(255, 255, 255,0);
     }
 
-    .blog-grid{
+    .blog-grid{        
         grid-template-columns: 100%;
+        grid-template-rows: 30% 28% 24% 18%;
+        padding-bottom:10%;
     }
 
+    .blog-article{
+        font-size: smaller;        
+    }
+
+    .blog button{
+       margin: 0;
+
+    }
+
+
+
+    
 
 .navbar-collapse{
     border-top: 1px solid white;    
@@ -579,7 +638,9 @@ margin-top: 2%;
     };
     
    
-
+    .blog main{
+        padding-bottom: 50px;
+    }
 
     .nav-item{
         font-size: 2rem !important;        
@@ -587,9 +648,10 @@ margin-top: 2%;
 
 }
 
-@media (max-width:688px){
+
+@media (max-width:688px) and (min-width:445px){
     nav h1{
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
     }
 
     nav ul li a{
@@ -597,10 +659,27 @@ margin-top: 2%;
     }
 
     .blog main{
-        width: 100%;
+       margin-bottom: 10px;
     }
     
 
+}
+
+@media (max-width:500px) {
+
+    .blog main{        
+        padding-bottom: 50px;
+    }
+
+    .blog article p{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:253px) {
+    .blog , .blog section article h1{
+        font-size: xx-small;
+    }
 }
 
 
@@ -616,6 +695,9 @@ margin-top: 2%;
            font-size: 10px;
        }
    }
+
+   
+
 
    @media (max-width:840px){
     nav ul li a{
@@ -659,7 +741,23 @@ margin-top: 2%;
     
 }
 
-@media (max-width:768px) and (min-width:320px){
+    @media (min-width:769px){
+        .ballerobica h1{
+            font-size: 40px;
+        }
+    }
+
+@media (min-width:2000px){
+    nav ul li a{
+        font-size: 50px !important;
+    }
+
+    header h1{
+        font-size: 10rem;
+    }
+}
+
+@media (max-width:768px) and (min-width:300px){
     body{
         background-image: url(../images/BackgroundMobile1.png);
         backdrop-filter: blur(2px);
@@ -667,6 +765,7 @@ margin-top: 2%;
 
     .ballerobica h1{
         color: #501c2b;
+        font-size: 30px;
     }
 
 
@@ -675,6 +774,10 @@ margin-top: 2%;
 @media (max-width:769px){
     nav ul li{
         background-color: rgba(255, 255, 255, 0,1) !important;
+    }
+
+    .video{
+        height: 40%;
     }
 
     .profe__foto{
@@ -713,3 +816,26 @@ margin-top: 2%;
     .ballerobica__card--img{
         display: none;
     
+    *
+    /* @ */
+
+    @media (max-width:444px){
+        nav h1{
+            font-size: 5px !important;
+        }   
+    }
+
+    @media (max-width:500px) and (min-width:450px){
+        
+        
+        .blog-grid{
+            grid-template-rows: 29% 29% 25% 18%;
+        }
+    }
+
+    @media (max-width:451px){
+        .blog-grid{
+            grid-template-rows: 32% 31% 23% 17%;
+            margin-bottom: 40px;
+        }
+    }
