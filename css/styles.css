@@ -143,6 +143,11 @@ body{
     
 }
 
+.bodycontacto main{
+    margin-bottom: 15%;
+    
+}
+
 main{
         
     width: 80vw;
@@ -374,6 +379,7 @@ main{
 
 .formsection{
     text-align: center;
+    padding-bottom: 10%;
 }
 
 .formsection h1{
