@@ -847,6 +847,10 @@ margin-top: 2%;
         }
 
         .formsection{
-            height: 80vh;
+            height: 120vh;
+        }
+
+        .formsection button{
+            font-size: 10px !important;
         }
     }
