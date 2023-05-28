@@ -406,7 +406,7 @@ form .labelN, form .labelDH{
 } 
 
 form input, form select, form textarea{
-    margin-top: 4% ;    
+    margin-bottom: 2% ;    
     background-color: #fccfdb !important;
     border: 1px solid gray;
     border-radius: 2%;
@@ -415,7 +415,7 @@ form input, form select, form textarea{
 
  textarea{
     resize: none !important;
-    height: 200px !important;
+    height: 135px !important;
 }
 
 form input{
@@ -853,7 +853,7 @@ margin-top: 2%;
         }
 
         .formsection{
-            height: 90vh;
+            height: 120vh;
         }
 
         .formsection button{

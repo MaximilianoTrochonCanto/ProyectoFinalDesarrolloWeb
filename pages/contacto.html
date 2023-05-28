@@ -49,42 +49,47 @@
         </div>
       </nav>
     <main>
-        <section class="formsection">
+        <section class="formsection container">
             <h1>Te interesa hacer clase?</h1>   
-            <form>
-                <div class="row m-1">
-                    <label for="inputNombre" class="col-form-label">Nombre</label>                    
-                    <input type="text" class="form-control" id="inputNombre">                    
-                </div>
-                <div class="row m-1">
-                    <label for="inputTelefono" class="col-form-label">Teléfono</label>                    
-                    <input type="number" class="form-control" id="inputTelefono">                    
-                </div>
-                <div class="row m-1">
-                    <label for="inputEmail" class="col-form-label">Email</label>                    
-                      <input type="email" class="form-control" id="inputEmail">                    
-                </div>
-                <div class="row m-2">
-                    <label for="validationDefault04" class="col-form-label">Día & hora</label>
-                    <select class=" form-select" id="validationDefault04" required>
-                      <option selected disabled value="">Selecciona...</option>
-                      <option value="1">Lunes - 14:00 - 15:00</option>
-                                  <option value="2">Lunes - 17:00 - 18:00</option>
-                                  <option value="3">Lunes - 19:30 - 20:30</option>
-                                  <option value="4">Martes - 09:00 - 10:00</option>
-                                  <option value="5">Martes - 12:00 - 13:00</option>
-                                  <option value="6">Miércoles - 13:00 - 14:00</option>
-                                  <option value="7">Miércoles - 14:30 - 15:30</option>
-                    </select>
-                </div>
-                <div class="row m-2">
-                    <label for="textarea" class="col-form">Comentarios</label>
-                    <textarea name="textarea" class="form-control" id="txtComentarios"></textarea>
-                </div>
-                    <div class="text-center">
-                        <button class="mt-4 col-3" type="submit">Enviar</button>
+            <form class="row mx-1">
+                <div class="col-lg-6 col-12">
+
+                    <div>
+                        <label for="inputNombre" class="col-form-label">Nombre</label>                    
+                        <input type="text" class="form-control" id="inputNombre">                    
                     </div>
-                  </div>
+                    <div>
+                        <label for="inputTelefono" class="col-form-label">Teléfono</label>                    
+                        <input type="number" class="form-control" id="inputTelefono">                    
+                    </div>                    
+                    <div>
+                        <label for="validationDefault04" class="col-form-label">Día & hora</label>
+                        <select class=" form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Selecciona...</option>
+                            <option value="1">Lunes - 14:00 - 15:00</option>
+                            <option value="2">Lunes - 17:00 - 18:00</option>
+                            <option value="3">Lunes - 19:30 - 20:30</option>
+                            <option value="4">Martes - 09:00 - 10:00</option>
+                            <option value="5">Martes - 12:00 - 13:00</option>
+                            <option value="6">Miércoles - 13:00 - 14:00</option>
+                            <option value="7">Miércoles - 14:30 - 15:30</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mx-2">
+                        <div class="m-1">
+                            <label for="inputEmail" class="col-form-label">Email</label>                    
+                            <input type="email" class="form-control" id="inputEmail">                    
+                        </div>
+                        <label for="textarea" class="col-form">Comentarios</label>
+                    <textarea name="textarea" class="form-control" id="txtComentarios"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="text-center">
+                    <button class="mt-4 col-3" type="submit">Enviar</button>
+                </div>                  
                 </form>
                 <!-- <div class="col-lg-4">
                   <label for="validationDefault01" class="form-label">Nombre</label>
