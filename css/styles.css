@@ -414,7 +414,7 @@ form input, form select, form textarea{
 }
 
  textarea{
-    resize: none;
+    resize: none !important;
     height: 200px !important;
 }
 
