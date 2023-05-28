@@ -247,7 +247,7 @@ main{
     background-image: url(../images/foto3_auto_x2.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: 300px;
+    background-position-x: 200px;
 }
 
 .profe__foto__2{
@@ -598,7 +598,8 @@ margin-top: 2%;
    
     .profe__foto{
         height: 40vh;
-        background-position: 0;
+        background-size: cover;
+        background-position: -50px;
     }
 
     .profe__article__last{
@@ -781,8 +782,8 @@ margin-top: 2%;
     }
 
     .profe__foto{
-        height: 40vh;
-        background-position: 0;
+        height: 30vh;
+        background-position-x: -700px;
     }
 
 }
@@ -821,7 +822,7 @@ margin-top: 2%;
 
     @media (max-width:444px){
         nav h1{
-            font-size: 5px !important;
+            font-size: 20px !important;
         }   
     }
 
