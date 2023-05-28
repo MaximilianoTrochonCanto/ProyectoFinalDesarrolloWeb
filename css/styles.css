@@ -379,6 +379,7 @@ main{
 .formsection{
     text-align: center;
     padding-bottom: 15%;
+    border: 1px solid black;
 }
 
 .formsection h1{
@@ -406,10 +407,15 @@ form .labelN, form .labelDH{
 
 form input, form select, form textarea{
     margin-top: 4% ;    
-    background-color: #ffa1bb;
+    background-color: #fccfdb !important;
     border: 1px solid gray;
     border-radius: 2%;
 
+}
+
+ textarea{
+    resize: none;
+    height: 200px !important;
 }
 
 form input{
@@ -847,7 +853,7 @@ margin-top: 2%;
         }
 
         .formsection{
-            height: 80vh;
+            height: 90vh;
         }
 
         .formsection button{
