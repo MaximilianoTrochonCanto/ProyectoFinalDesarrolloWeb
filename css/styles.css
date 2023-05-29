@@ -829,7 +829,7 @@ margin-top: 2%;
 }
 
 
-@media (max-width:350px){
+@media (max-width:450px){
     .profe__foto{
         display: none;
     }
