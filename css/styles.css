@@ -610,7 +610,7 @@ margin-top: 2%;
     .profe__foto{
         height: 40vh;
         background-size: cover;
-        background-position: -50px;
+        
     }
 
     .profe__article__last{
@@ -828,6 +828,12 @@ margin-top: 2%;
     }
 }
 
+
+@media (max-width:350px){
+    .profe__foto{
+        display: none;
+    }
+}
 
 /*
 @media (max-width:768px) and (min-width:320px){
