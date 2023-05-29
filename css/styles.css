@@ -352,10 +352,9 @@ main{
         border-radius: 4%;
     }
 
-    .certificado,  .carousel , .ejercicios img{
+    .certificado,  .carousel , .ejercicios section img{
         
-        padding: 1%;
-                
+        padding: 1%;                
         transition-property:all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
@@ -775,10 +774,20 @@ margin-top: 2%;
 }
 
 @media (max-width:768px) and (min-width:300px){
-    body{
-        background-image: url(../images/BackgroundMobile1.png);
+    body, .blog{
+        
         backdrop-filter: blur(2px);
     }
+
+    .blog{
+        background-image: url(../images/Foto1.jpg);
+    }
+
+    body{
+        background-image: url(../images/BackgroundMobile1.png);
+    }
+
+    
 
     .carousel :hover{
         margin-bottom: 4% ;
@@ -809,6 +818,10 @@ margin-top: 2%;
         
     }
 
+
+    .ejercicios article p{
+        font-size:x-small;
+    }
 }
 
 
