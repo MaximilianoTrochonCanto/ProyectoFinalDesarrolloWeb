@@ -335,7 +335,7 @@ main{
 }
 
 .carousel img{
-    width: 1500px !important;
+    width: 100% !important;
 }
 
 .certificado h1{
@@ -366,7 +366,7 @@ main{
         width: 80%;
     }
 
-    .certificado:hover, .ejercicios img:hover{
+    .certificado:hover,.ejercicios img:hover{
         transform: scale(1.3)
     }
 
@@ -374,6 +374,7 @@ main{
         font-size:40%;
     }
 
+    
 
 
 .formsection{
@@ -658,6 +659,10 @@ margin-top: 2%;
         font-size: 2rem !important;        
     }
 
+    .certificado:hover{
+        transform: scale(1.1);
+    }
+
 }
 
 
@@ -773,6 +778,12 @@ margin-top: 2%;
     body{
         background-image: url(../images/BackgroundMobile1.png);
         backdrop-filter: blur(2px);
+    }
+
+    .carousel :hover{
+        margin-bottom: 4% ;
+        margin-top: 2%;
+        
     }
 
     .ballerobica h1{
