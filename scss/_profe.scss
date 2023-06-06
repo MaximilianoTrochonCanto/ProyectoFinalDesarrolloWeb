@@ -1,0 +1,117 @@
+.profe{        
+    text-align: center;    
+    padding: 30px;  
+    background-color: rgb(250, 235, 215,0.5);  
+
+
+    aside{
+        background-color: rgba(255, 255, 255, 0.5); 
+        padding: 3%;
+    }
+
+    p{
+        font-family: 'Roboto'  
+    }
+
+    h1{
+        font-size: 40px;    
+        font-family: "Solitreo";
+        color: $morado;
+        border-bottom: 1px solid $morado;
+        margin-bottom: 4%;
+        text-align: center;    
+        transition-property:transform;
+        transform-origin:0px;
+        transition-timing-function: ease;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        &:hover{            
+            transform: translateY (10px);            
+        }
+    }
+
+    img{
+        margin-top: 3%;
+        width: 100%;
+    }
+    
+    a{
+        color: black;
+    }
+}
+
+
+
+.profe__foto{
+    background-image: url(../images/foto3_auto_x2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 200px;
+}
+
+.profe__foto__2{
+    background-image: url(../images/foto4_auto_x2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.profe__article{
+    background-color: white;
+    padding: 6% 3%;
+}
+
+
+
+   
+
+    
+#certs{
+    padding: 2% 0px;
+    margin: 0 auto;
+    border-top: 1px solid $lila;
+    
+
+
+    h1{
+        letter-spacing: 2px;    
+        color: $morado2;
+        font-family: "Delius";    
+        
+    }
+
+    img{
+        width: 80%;
+    }
+
+
+    article {
+        width: 32%;   
+        h1{
+            font-size:40%;
+        }      
+    }
+}
+
+.certificado{
+
+    border: 1px solid $lila;
+    background-color: rgba(255, 255, 255, .7) !important;
+    border-radius: 4%;
+    padding: 1%;                
+    transition-property:all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; 
+
+    h1{
+        letter-spacing: 2px;    
+        color: $morado2;
+        font-family: "Delius";        
+        font-size: 1rem;        
+    }
+
+    &:hover{
+        transform: scale(1.3)
+    }
+}

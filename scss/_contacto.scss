@@ -1,0 +1,76 @@
+.bodycontacto{
+    background-image: url(../images/background2.png);
+    background-size: cover;    
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    
+}
+
+
+
+.formsection{
+    text-align: center;
+    padding-bottom: 15%;
+    border: 1px solid black;
+    h1{
+        letter-spacing: 2px;    
+        color: $morado2;
+        font-family: "Delius";
+        padding: 2% 0;
+        font-size: 40px;
+    }
+
+}
+
+
+form {
+    fieldset{
+    width: 70%;
+    border-radius: 3%;
+        div{
+            width: 25vw;        
+        }
+    }
+
+    label{
+        width: 40%;
+    }
+
+    .labelN , .labelDH{
+        font-size: 80%;
+    }
+ 
+    input{
+        width: 70%;
+    }
+
+    
+
+    input, select, textarea{
+        margin-bottom: 2% ;    
+        background-color:$rosado-claro  !important;
+        border: 1px solid gray;
+        border-radius: 2%;
+    }
+    
+    textarea{
+        resize: none !important;
+        height: 135px !important;
+    }
+
+    button{
+        border: 2px solid black;
+        padding: 1% 4%;
+        margin: 1% 2%;  
+        color: black !important; 
+        background-color:  $rosado !important;    
+        &:hover{            
+                background-color: #d64d74;            
+        }
+    }
+
+    select{
+        width: 68%;
+    }
+
+}

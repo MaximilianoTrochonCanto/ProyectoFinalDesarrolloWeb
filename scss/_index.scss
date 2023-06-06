@@ -1,0 +1,65 @@
+
+.ballerobica {
+    line-height: 180%;
+        padding: 3%;
+    background-color: rgb(255, 255, 255,0);    
+    
+    h1{
+        text-align: center;
+        &:hover{
+            transform: translateX(10px);
+        }
+    }
+
+    p{
+        text-align: center;
+    }
+
+    img{
+        width: 77%;
+        border-radius: 70%;    
+    }
+
+    ul li{
+        list-style-type: '★';
+    }
+}
+
+
+.ballerobica__card__container{
+    
+    margin-top: 3%;
+    
+}
+
+.ballerobica__card{
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255, .5);
+    padding: 1%;
+
+    p{
+        font-family: 'KalamBold';
+    }
+
+    li{
+        font-family: 'KalamBold';
+    }
+
+    h1{
+    font-family: "Parisiene";
+    font-size: 7vh;
+    border-bottom: 1px solid black;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
+
+
+}
+
+
+.video{
+    height: 50%;
+    margin-bottom: 40%;
+}
