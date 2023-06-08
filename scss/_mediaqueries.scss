@@ -31,6 +31,8 @@
 
 @media (max-width: $lg){
        
+    
+
         .profe__foto{
             display: none;
         }
@@ -160,7 +162,7 @@
     
     
     
-    @media (max-width:1024px) and (min-width:768px){
+    @media (max-width:1024px) and (min-width:$md){
         body{
             backdrop-filter: blur(2px);
             
@@ -168,7 +170,7 @@
         
     }
     
-        @media (min-width:769px){
+        @media (min-width:$md){
             .ballerobica{
                 h1{
                     font-size: 40px;
@@ -234,8 +236,13 @@
     
     }
     
-    @media (max-width:769px){
+    @media (max-width:$md){
         
+        footer{
+            img{
+                width: 10%;
+            }
+        }
     
         .video{
             height: 40%;
