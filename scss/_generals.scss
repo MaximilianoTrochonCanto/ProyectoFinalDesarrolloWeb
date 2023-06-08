@@ -1,3 +1,5 @@
+@import "variables";
+
 *{
     scroll-behavior: smooth;
     margin: 0 auto;
@@ -17,6 +19,7 @@ header{
         font-size: 6rem;
         color: #b3426d;
         margin: 1%;
+        animation: fadeInRight 1s;
     }
 }
 
@@ -75,7 +78,7 @@ main{
 }
 
 footer {    
-    background-color:$lila;        
+    
      img{
         align-items: center;
         justify-content: center;
@@ -91,7 +94,8 @@ footer {
         color: rgb(0,0,0,0) !important;
     }
 
-    }
+    background:$degradeF;
+}
 
     button:hover{
         background-color:  #daaab8;        

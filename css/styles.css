@@ -35,6 +35,26 @@
     opacity: 1;
   }
 }
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 * {
   scroll-behavior: smooth;
   margin: 0 auto;
@@ -53,6 +73,7 @@ header h1 {
   font-size: 6rem;
   color: #b3426d;
   margin: 1%;
+  animation: fadeInRight 1s;
 }
 
 nav {
@@ -103,7 +124,7 @@ main {
 }
 
 footer {
-  background-color: #9384d1;
+  background: radial-gradient(ellipse 750px 200px, #aea3db, #5643a1);
 }
 footer img {
   align-items: center;
@@ -174,6 +195,7 @@ button:hover {
 .video {
   height: 50%;
   margin-bottom: 40%;
+  animation: zoomIn 3s;
 }
 
 .bodycontacto {
@@ -350,7 +372,7 @@ form select {
 #certs {
   padding: 2% 0px;
   margin: 0 auto;
-  border-top: 1px solid #9384d1;
+  border-top: 1px solid #aea3db;
 }
 #certs h1 {
   letter-spacing: 2px;
@@ -368,7 +390,7 @@ form select {
 }
 
 .certificado {
-  border: 1px solid #9384d1;
+  border: 1px solid #aea3db;
   background-color: rgba(255, 255, 255, 0.7) !important;
   border-radius: 4%;
   padding: 1%;
