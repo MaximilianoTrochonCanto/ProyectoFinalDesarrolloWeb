@@ -28,7 +28,10 @@
             li{
                 a{
                 text-decoration: none;
-                color: rgb(43, 42, 42)
+                color: rgb(43, 42, 42, 0.6);
+                &:hover{
+                    color:rgb(43, 42, 42);
+                }
                 }
             }
         }

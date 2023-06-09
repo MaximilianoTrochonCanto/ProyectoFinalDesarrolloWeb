@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
     margin: 0 auto;
     font-family: 'Roboto';
-    animation: fadeIn 1.5s;
+    // animation: fadeIn 1.5s;
     
 }
 
@@ -35,6 +35,7 @@ nav{
         font-size: 4rem !important;
         margin: 25px;               
         font-family: 'Parisiene'; 
+        animation: fadeDown 1.5s;
     }
 
     ul{    

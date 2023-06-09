@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MaximilianoTrochonCanto/SegundaPreentrega_MaximilianoTrochon/issues"
   },
-  "homepage": "https://github.com/MaximilianoTrochonCanto/SegundaPreentrega_MaximilianoTrochon#readme"
+  "homepage": "https://github.com/MaximilianoTrochonCanto/SegundaPreentrega_MaximilianoTrochon#readme",
+  "dependencies": {
+    "swup": "^3.0.8"
+  }
 }
