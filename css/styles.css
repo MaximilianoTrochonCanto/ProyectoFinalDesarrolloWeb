@@ -65,6 +65,18 @@
     transform: scale(1, 1);
   }
 }
+@keyframes zoomIn2 {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+    color: rgb(158, 57, 85);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Bold.ttf);
@@ -93,11 +105,61 @@
   font-family: "KalamBold";
   src: url(../fonts/Kalam-Bold.ttf);
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes zoomIn2 {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+    color: rgb(158, 57, 85);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 * {
   scroll-behavior: smooth;
   margin: 0 auto;
-  font-family: "Roboto";
   animation: fadeIn 1.5s;
+  font-family: "Roboto";
 }
 
 header {
@@ -116,8 +178,7 @@ header h1 {
 }
 
 nav {
-  background-image: linear-gradient(rgb(158, 57, 85), rgb(250, 156, 182));
-  opacity: 0.8;
+  background-image: linear-gradient(rgba(158, 57, 85, 0.7), rgba(250, 156, 182, 0.7));
   padding-top: 3px;
   top: 0;
   padding: 3px auto 0;
@@ -217,6 +278,24 @@ button:hover {
   opacity: 1;
 }
 
+footer a:nth-of-type(1) {
+  animation: fadeIn 0.3s;
+  animation-fill-mode: both;
+  animation-delay: 0.75s;
+}
+
+footer a:nth-of-type(2) {
+  animation: fadeIn 0.3s;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+
+footer a:nth-of-type(3) {
+  animation: fadeIn 0.3s;
+  animation-fill-mode: both;
+  animation-delay: 2.25s;
+}
+
 .ballerobica {
   line-height: 180%;
   padding: 3%;
@@ -236,6 +315,72 @@ button:hover {
   list-style-type: "★";
 }
 
+.ballerobica__card li:nth-of-type(1) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.25s;
+}
+
+.ballerobica__card li:nth-of-type(2) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+.ballerobica__card li:nth-of-type(3) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.75s;
+}
+
+.ballerobica__card li:nth-of-type(4) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+.ballerobica__card li:nth-of-type(5) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 1.25s;
+}
+
+.ballerobica__card li:nth-of-type(6) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+
+.ballerobica__card li:nth-of-type(7) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 1.75s;
+}
+
+.ballerobica__card li:nth-of-type(8) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.ballerobica__card li:nth-of-type(9) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 2.25s;
+}
+
+.ballerobica__card li:nth-of-type(10) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 2.5s;
+}
+
+.ballerobica__card li:nth-of-type(11) {
+  animation: fadeInRight 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 2.75s;
+}
+
 .ballerobica__card__container {
   margin-top: 3%;
 }
@@ -250,6 +395,7 @@ button:hover {
 }
 .ballerobica__card li {
   font-family: "KalamBold";
+  position: relative;
 }
 .ballerobica__card h1 {
   font-family: "Parisiene";
@@ -262,7 +408,9 @@ button:hover {
   margin-bottom: 40%;
 }
 .video h1 {
-  animation: zoomIn 3s;
+  border-bottom: none;
+  animation: zoomIn2 3s;
+  animation-iteration-count: infinite;
 }
 
 .bodycontacto {
@@ -506,6 +654,7 @@ form select {
   background-repeat: no-repeat;
   backdrop-filter: blur(5px);
   background-attachment: fixed;
+  font-family: "Roboto";
 }
 .ejercicios .tipoEjercicio ul {
   border-bottom: 1px solid black;

@@ -1,5 +1,8 @@
 @import 'variables';
 
+
+
+
 .ballerobica {
     line-height: 180%;
         padding: 3%;
@@ -18,9 +21,26 @@
         border-radius: 70%;    
     }
 
-    ul li{
-        list-style-type: '★';
+    ul {
+        
+        li{
+        list-style-type: '★';           
+        }
     }
+}
+
+@for $i from 1 through 11 {
+    .ballerobica__card{
+     
+    li{
+        &:nth-of-type(#{$i}) {
+        
+        animation: fadeInRight 0.5s;
+        animation-fill-mode: both;
+        animation-delay: .25s * $i;
+    }
+    }
+  }
 }
 
 
@@ -29,6 +49,8 @@
     margin-top: 3%;
     
 }
+
+
 
 .ballerobica__card{
     border-radius: 5%;
@@ -41,7 +63,11 @@
 
     li{
         font-family: 'KalamBold';
+        position: relative;
+        
     }
+
+        
 
     h1{
     font-family: "Parisiene";
@@ -58,7 +84,9 @@
     height: 50%;
     margin-bottom: 40%;
     h1{
-    animation:zoomIn 3s;
+    border-bottom: none;
+    animation:zoomIn2 3s;
+    animation-iteration-count: infinite;
     }
 
 }

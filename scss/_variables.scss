@@ -1,6 +1,7 @@
 @import "maps";
 
 $lineaNegra: 1px solid black;
+$degradeRT:linear-gradient(rgb(158, 57, 85,.7),rgba(250, 156, 182,.7)); 
 $degradeR:linear-gradient(map-get($colores,rosado3),map-get($colores,rosado4)); 
 $degradeM:radial-gradient(ellipse 750px 120px,map-get($colores,lila),map-get($colores,lila2));
 $md:769px;

@@ -2,13 +2,13 @@
 @import "mixins";
 @import "maps";
 @import "fonts";
+@import "animations";
 
 *{
     scroll-behavior: smooth;
     margin: 0 auto;
-    font-family: 'Roboto';
     animation: fadeIn 1.5s;
-    
+    font-family: 'Roboto';
 }
 
 header{
@@ -24,23 +24,20 @@ header{
 }
 
 nav{
-    background-image: $degradeR;
-    opacity: 0.8;
+    background-image: $degradeRT;    
     padding-top: 3px;    
     top: 0;
     padding: 3px auto 0;
     
     h1{
-        @include textos('Parisiene',4rem !important,'center',none,white !important, 25px);
-        
+        @include textos('Parisiene',4rem !important,'center',none,white !important, 25px);        
         animation: fadeDown 1.5s;
     }
 
     ul{    
         list-style-type: none;    
         width: 100%;
-        margin: 5px;
-        
+        margin: 5px;        
         padding: 15px;
         li{                    
             line-height: 40px;
@@ -49,7 +46,7 @@ nav{
             a{
                 @include textos('Roboto',10px,center,none,white !important,0);
                 @include transitionProps();    
-                
+                          
                 color: white !important;        
                 &:hover{
                     background-color: #fdf5e7 !important;
@@ -110,4 +107,17 @@ footer {
         &:hover{
             opacity: 1;
         }   
+    }
+
+    @for $i from 1 through 3 {
+        footer{         
+            a{
+                &:nth-of-type(#{$i}) {            
+                animation: fadeIn 0.3s;
+                animation-fill-mode: both;            
+                animation-delay: .75s * $i;
+                }
+            }
+        }
+      
     }
