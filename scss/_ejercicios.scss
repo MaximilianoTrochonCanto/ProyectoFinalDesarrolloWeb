@@ -15,10 +15,9 @@
 
 
 .ejercicios{
-    background-image: url(../images/background3.jpg);
-    background-size: cover;
+    @include fondo(url(../images/background3.jpg));
+    
     background-attachment: fixed;         
-    backdrop-filter: blur(5px);
 
     .tipoEjercicio{
          ul{                
@@ -29,6 +28,7 @@
                 a{
                 text-decoration: none;
                 color: rgb(43, 42, 42, 0.6);
+                @include transitionProps();
                 &:hover{
                     color:rgb(43, 42, 42);
                 }
@@ -44,13 +44,15 @@
     }
 
     section{ 
+        
         h1{                
-            @include textos("Solitreo",40px,center,underline,black,none);
-        text-decoration: underline;
-        font-family: "Solitreo";
-        font-size: 40px;
-        text-align: center;
+        @include textos("Solitreo",40px,center,underline,black,none);
         border-bottom: $lineaNegra;
+        
+        
+        
+        
+        
     }
 
         img{
@@ -61,7 +63,7 @@
 
     article{
         padding: 3% 2%;        
-        border-bottom: $lineaNegra
+        border-bottom: $lineaNegra;
 
         p{
             margin-top: 2%;

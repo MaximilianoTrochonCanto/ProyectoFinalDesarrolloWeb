@@ -3,9 +3,8 @@
 @import "maps";
 
 .blog{
-    background-image: url(../images/Background4.jpg);
-    background-size: cover;        
-    backdrop-filter: blur(5px);
+    
+    @include fondo(url(../images/Background4.jpg));
     section{
         padding: 1% 6%;
         

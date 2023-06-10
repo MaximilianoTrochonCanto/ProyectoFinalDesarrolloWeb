@@ -61,20 +61,20 @@
     <main>
         <section class="formsection container">
             <h1>Te interesa hacer clase?</h1>   
-            <form class="row mx-1">
+            <form class="row mx-1" id="form">
                 <div class="col-lg-6 col-12">
 
                     <div>
-                        <label for="inputNombre" class="col-form-label">Nombre</label>                    
-                        <input type="text" class="form-control" id="nombre" required>                    
+                        <label for="inputNombre" class="col-form-label">Nombre*</label>                    
+                        <input type="text" class="form-control" id="nombre">                    
                     </div>
                     <div>
-                        <label for="inputTelefono" class="col-form-label">Teléfono</label>                    
-                        <input type="number" class="form-control" id="telefono" required>                    
+                        <label for="inputTelefono" class="col-form-label">Teléfono*</label>                    
+                        <input type="number" class="form-control" id="telefono">                    
                     </div>                    
                     <div>
                         <label for="validationDefault04" class="col-form-label">Día & hora</label>
-                        <select class=" form-select" id="diaYhora" required>
+                        <select class=" form-select" id="diaYhora">
                             <option selected disabled value="">Selecciona...</option>
                             <option value="Lunes14:00-15:00">Lunes - 14:00 - 15:00</option>
                             <option value="Lunes17:00-18:00">Lunes - 17:00 - 18:00</option>
@@ -89,16 +89,16 @@
                 <div class="col-lg-6 col-12">
                     <div class="mx-2">
                         <div class="m-1">
-                            <label for="inputEmail" class="col-form-label">Email</label>                    
-                            <input type="email" class="form-control" id="email" required>                    
+                            <label for="inputEmail" class="col-form-label">Email* </label>                    
+                            <input type="email" class="form-control" id="email">                    
                         </div>
-                        <label for="textarea" class="col-form">Comentarios</label>
+                        <label for="textarea" class="col-form">Comentarios </label>
                     <textarea name="textarea" class="form-control" id="comentarios"></textarea>
                     </div>
                     
                 </div>
                 <div class="text-center">
-                    <button class="mt-4 col-3" id="btnEnviar" onclick="enviarEmail()" >Enviar</button>
+                    <button class="mt-4 col-3" id="btnEnviar" onclick="enviarEmail(event)" >Enviar</button>
                 </div>                  
                 </form>                
         </section>                
@@ -125,11 +125,5 @@
     
 </body>
 
-<!-- <script>
-    var btn = document.getElementById('btnEnviar');
-btn.addEventListener('click',function(e){
-    e.preventDefault();
-    console.log("felices 9 mese");
-})
-</script> -->
+
 </html>

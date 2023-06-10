@@ -110,7 +110,7 @@ header h1 {
   font-size: 6rem;
   text-align: "center";
   text-decoration: none;
-  color: #d64d74;
+  color: rgb(158, 57, 85);
   margin: 1%;
   animation: fadeInRight 1s;
 }
@@ -268,8 +268,9 @@ button:hover {
 .bodycontacto {
   background-image: url(../images/background2.png);
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   backdrop-filter: blur(5px);
+  background-attachment: fixed;
 }
 
 .formsection {
@@ -330,6 +331,7 @@ form select {
 .blog {
   background-image: url(../images/Background4.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   backdrop-filter: blur(5px);
 }
 .blog section {
@@ -501,8 +503,9 @@ form select {
 .ejercicios {
   background-image: url(../images/background3.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   backdrop-filter: blur(5px);
+  background-attachment: fixed;
 }
 .ejercicios .tipoEjercicio ul {
   border-bottom: 1px solid black;
@@ -512,6 +515,10 @@ form select {
 .ejercicios .tipoEjercicio ul li a {
   text-decoration: none;
   color: rgba(43, 42, 42, 0.6);
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 .ejercicios .tipoEjercicio ul li a:hover {
   color: rgb(43, 42, 42);
@@ -526,10 +533,6 @@ form select {
   text-decoration: underline;
   color: black;
   margin: none;
-  text-decoration: underline;
-  font-family: "Solitreo";
-  font-size: 40px;
-  text-align: center;
   border-bottom: 1px solid black;
 }
 .ejercicios section img {
@@ -541,10 +544,12 @@ form select {
 }
 .ejercicios article {
   padding: 3% 2%;
-  border-bottom: 1px solid black p;
-  border-bottom-margin-top: 2%;
-  border-bottom-width: 70%;
-  border-bottom-font-size: smaller;
+  border-bottom: 1px solid black;
+}
+.ejercicios article p {
+  margin-top: 2%;
+  width: 70%;
+  font-size: smaller;
 }
 .ejercicios article div img {
   width: 70%;

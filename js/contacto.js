@@ -1,9 +1,6 @@
-function enviarEmail(){
-    console.log("Hola")
+function enviarEmail(e){
     const serviceID = "service_xw5s7ne";
     const templateID = "template_f7n8ud8";
-    
-    console.log("Envia msj");
     var params = {
         nombre: document.getElementById("nombre").value,
         email: document.getElementById("email").value,
@@ -11,19 +8,28 @@ function enviarEmail(){
         diaYhora: document.getElementById("diaYhora").value,
         comentarios: document.getElementById("comentarios").value
     }
+    
 
-    console.log(params)
-
-    if(params.nombre != "" && params.email != "" && params.telefono != "" && params.diaYhora != ""){
+    if(params.nombre != "" && params.email != "" && params.telefono != ""){
     emailjs.send(serviceID,templateID,params)
      .then(
-         
-         alert("mensaje enviado")
+        console.log(params.telefono),
+         alert("El mensaje enviado. En seguida nos contactaremos contigo!"),
+         document.querySelector('#form').reset()
          )
          .catch((error) => alert(error));
-        }else{
-            alert("Lo sentimos, hace falta completar los datos")
+        }else{    
+            if(params.nombre == "")       
+            alert("Lo sentimos, debe ingresar su nombre completo.")
+            else 
+            if(params.telefono == "")
+            alert("Lo sentimos, debe ingresar su teléfono celular.")
+            else
+            if(params.email == "")          
+            alert("Lo sentimos, debe ingresar su e-mail.");
+            
+            
         }
+    e.preventDefault();
 }
-
 
