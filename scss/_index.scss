@@ -1,3 +1,4 @@
+@import 'variables';
 
 .ballerobica {
     line-height: 180%;
@@ -5,10 +6,7 @@
     background-color: rgb(255, 255, 255,0);    
     
     h1{
-        text-align: center;
-        &:hover{
-            transform: translateX(10px);
-        }
+        text-align: center;        
     }
 
     p{
@@ -34,7 +32,7 @@
 
 .ballerobica__card{
     border-radius: 5%;
-    background-color: rgb(255, 255, 255, .5);
+    background-color: map-get($colores,whitransparent);
     padding: 1%;
 
     p{
@@ -48,11 +46,8 @@
     h1{
     font-family: "Parisiene";
     font-size: 7vh;
-    border-bottom: 1px solid black;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    border-bottom: $lineaNegra;
+    
     }
 
 
@@ -62,6 +57,8 @@
 .video{
     height: 50%;
     margin-bottom: 40%;
+    h1{
     animation:zoomIn 3s;
+    }
 
 }

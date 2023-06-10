@@ -1,3 +1,7 @@
+@import "mixins";
+@import "variables";
+@import "maps";
+
 .bodycontacto{
     background-image: url(../images/background2.png);
     background-size: cover;    
@@ -11,13 +15,12 @@
 .formsection{
     text-align: center;
     padding-bottom: 15%;
-    border: 1px solid black;
+    
     h1{
-        letter-spacing: 2px;    
-        color: $morado2;
-        font-family: "Delius";
+        @include textos("Delius",40px,center,none,map-get($colores,morado2),0);
+        letter-spacing: 2px;                    
         padding: 2% 0;
-        font-size: 40px;
+        
     }
 
 }
@@ -48,7 +51,7 @@ form {
 
     input, select, textarea{
         margin-bottom: 2% ;    
-        background-color:$rosado-claro  !important;
+        background-color:map-get($colores,rosado-claro)  !important;
         border: 1px solid gray;
         border-radius: 2%;
     }
@@ -63,9 +66,10 @@ form {
         padding: 1% 4%;
         margin: 1% 2%;  
         color: black !important; 
-        background-color:  $rosado !important;    
+        background-color:  map-get($colores,rosado) !important;    
+        
         &:hover{            
-                background-color: #d64d74;            
+                background-color: map-get($colores,rosado2) !important;            
         }
     }
 

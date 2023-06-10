@@ -1,4 +1,7 @@
 @import "variables";
+@import "mixins";
+@import "maps";
+@import "fonts";
 
 *{
     scroll-behavior: smooth;
@@ -14,27 +17,20 @@ header{
     text-align: center;    
 
     h1{
-        font-family: 'Parisiene';
-        text-align: center;        
-        font-size: 6rem;
-        color: #b3426d;
-        margin: 1%;
+        @include textos('Parisiene',6rem,'center',none,#b3426d,1%);                
         animation: fadeInRight 1s;
     }
 }
 
 nav{
     background-image: $degradeH;
-
     padding-top: 3px;    
     top: 0;
     padding: 3px auto 0;
     
     h1{
-        color: white !important;
-        font-size: 4rem !important;
-        margin: 25px;               
-        font-family: 'Parisiene'; 
+        @include textos('Parisiene',4rem !important,'center',none,white !important, 25px);
+        
         animation: fadeDown 1.5s;
     }
 
@@ -48,12 +44,13 @@ nav{
             line-height: 40px;
             border-radius: 10px;     
             a{
-                text-decoration:solid;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                @include textos('Roboto',10px,center,none,white !important,0);
+                
+                
                 color: white !important;        
                 &:hover{
-                    background-color: #fdf5e7;
-                    color:  $bordeaux !important;    
+                    background-color: #fdf5e7 !important;
+                    color:  map-get($colores,bordeaux) !important;    
                     transform: scale(1.03) !important;                    
                 }
             }
@@ -75,7 +72,7 @@ body{
 main{
         
     width: 80vw;
-    background-color: rgba(255, 255, 255, 0.5);    
+    background-color: map-get($colores,whitransparent);    
 }
 
 footer {    
@@ -99,8 +96,12 @@ footer {
 }
 
     button{
+        transition-property:all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s; 
         &:hover{
-        background-color:  #daaab8;        
+        background-color: map-get($colores , rosado);        
         transform: scale(1.1);
         }
     }
@@ -108,6 +109,7 @@ footer {
     .backbutton{
         width: 5%;
         opacity: 0.5;
+        transition-duration: 1s;
         &:hover{
             opacity: 1;
         }   

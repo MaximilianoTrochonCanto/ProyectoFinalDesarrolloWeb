@@ -1,13 +1,8 @@
+@import "maps";
 
-$bordeaux:#9e3955;
-$morado:#46304d;
-$morado2:#615788;
-$lila:#c7bfe9;
-$lila2:#5643a1;
-$rosado-claro:#fccfdb;
-$degradeH:linear-gradient(rgb(158, 57, 85,0.8),rgba(250, 156, 182, 0.8)); 
-$degradeF:radial-gradient(ellipse 750px 120px,$lila,$lila2);
-$rosado:#d3708c;
+$lineaNegra: 1px solid black;
+$degradeH:linear-gradient(map-get($colores,rosadoTransparente1),map-get($colores,rosadoTransparente2)); 
+$degradeF:radial-gradient(ellipse 750px 120px,map-get($colores,lila),map-get($colores,lila2));
 $md:769px;
 $sm:680px;
 $xs:375px;

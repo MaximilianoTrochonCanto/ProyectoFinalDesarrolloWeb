@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 .carousel{
     padding: 1%;                
     transition-property:all;
@@ -22,7 +25,7 @@
 
     .tipoEjercicio{
          ul{                
-        border-bottom: 1px solid black ;
+        border-bottom: $lineaNegra ;
         list-style-type: none;
         display: flex;
             li{
@@ -43,38 +46,14 @@
         }
     }
 
-    article{
-        padding: 3% 2%;        
-        border-bottom: 1px solid black;
-
-        p{
-            margin-top: 2%;
-             width: 70%;  
-             font-size: smaller; 
-        }
-
-        h1{
-            font-family: "Klee";
-            text-decoration: none;
-            font-size: 20px;
-            border: none;
-        }
-
-            div {
-                img{
-                width: 70%;
-                border-radius: 4%;
-            }
-        }
-    }
-
     section{ 
         h1{                
+            @include textos("Solitreo",40px,center,underline,black,none);
         text-decoration: underline;
         font-family: "Solitreo";
         font-size: 40px;
         text-align: center;
-        border-bottom: 1px solid black;
+        border-bottom: $lineaNegra;
     }
 
         img{
@@ -85,4 +64,26 @@
         transition-delay: 0s;       
         }
     }
+
+    article{
+        padding: 3% 2%;        
+        border-bottom: $lineaNegra
+
+        p{
+            margin-top: 2%;
+             width: 70%;  
+             font-size: smaller; 
+        }
+
+        
+
+            div {
+                img{
+                width: 70%;
+                border-radius: 4%;
+            }
+        }
+    }
+
+    
 }

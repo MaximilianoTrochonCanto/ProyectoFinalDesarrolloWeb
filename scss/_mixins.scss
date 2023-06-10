@@ -1,0 +1,9 @@
+@mixin textos($font,$size,$align,$decor,$color,$margin){
+    
+    font-family: $font;
+    font-size: $size;
+    text-align: $align;
+    text-decoration: $decor;
+    color: $color;
+    margin:$margin;
+}

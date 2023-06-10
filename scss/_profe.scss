@@ -1,3 +1,7 @@
+@import 'mixins';
+@import 'maps';
+@import 'variables';
+
 .profe{        
     text-align: center;    
     padding: 30px;  
@@ -5,7 +9,7 @@
 
 
     aside{
-        background-color: rgba(255, 255, 255, 0.5); 
+        background-color:map-get($colores,whitransparent); 
         padding: 3%;
     }
 
@@ -14,17 +18,10 @@
     }
 
     h1{
-        font-size: 40px;    
-        font-family: "Solitreo";
-        color: $morado;
-        border-bottom: 1px solid $morado;
-        margin-bottom: 4%;
-        text-align: center;    
-        transition-property:transform;
-        transform-origin:0px;
-        transition-timing-function: ease;
-        transition-duration: 0.3s;
-        transition-delay: 0s;
+        @include textos("Solitreo",40px,center,none,map-get($colores,morado),0);        
+        border-bottom: 1px solid map-get($colores,morado);
+        margin-bottom: 4%;        
+        
         &:hover{            
             transform: translateY (10px);            
         }
@@ -69,13 +66,13 @@
 #certs{
     padding: 2% 0px;
     margin: 0 auto;
-    border-top: 1px solid $lila;
+    border-top: 1px solid map-get($colores,lila);
     
 
 
     h1{
         letter-spacing: 2px;    
-        color: $morado2;
+        color: map-get($colores,morado2);
         font-family: "Delius";    
         
     }
@@ -95,8 +92,8 @@
 
 .certificado{
 
-    border: 1px solid $lila;
-    background-color: rgba(255, 255, 255, .7) !important;
+    border: $lineaNegra;
+    background-color: map-get($colores,whitransparent) !important;
     border-radius: 4%;
     padding: 1%;                
     transition-property:all;
@@ -105,10 +102,8 @@
     transition-delay: 0s; 
 
     h1{
-        letter-spacing: 2px;    
-        color: $morado2;
-        font-family: "Delius";        
-        font-size: 1rem;        
+        @include textos("Delius",1rem,center,none,map-get($colores,morado2),0);
+        letter-spacing: 2px;            
     }
 
     &:hover{
