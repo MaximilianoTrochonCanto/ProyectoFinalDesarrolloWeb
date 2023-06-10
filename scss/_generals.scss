@@ -17,13 +17,15 @@ header{
     text-align: center;    
 
     h1{
-        @include textos('Parisiene',6rem,'center',none,#b3426d,1%);                
+        @include textos('Parisiene',6rem,'center',none,map-get($colores,rosado2),1%);                
         animation: fadeInRight 1s;
+       
     }
 }
 
 nav{
-    background-image: $degradeH;
+    background-image: $degradeR;
+    opacity: 0.8;
     padding-top: 3px;    
     top: 0;
     padding: 3px auto 0;
@@ -43,9 +45,10 @@ nav{
         li{                    
             line-height: 40px;
             border-radius: 10px;     
+            
             a{
                 @include textos('Roboto',10px,center,none,white !important,0);
-                
+                @include transitionProps();    
                 
                 color: white !important;        
                 &:hover{
@@ -82,7 +85,7 @@ footer {
         justify-content: center;
         margin: 2% 3%;
         width: 5%;
-        transition-duration: 0.4s;
+        @include transitionProps();
         &:hover{
             transform: scale(1.1);
         }
@@ -92,16 +95,13 @@ footer {
         color: rgb(0,0,0,0) !important;
     }
 
-    background:$degradeF;
+    background:$degradeM;
 }
 
     button{
-        transition-property:all;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        transition-delay: 0s; 
-        &:hover{
-        background-color: map-get($colores , rosado);        
+        @include transitionProps();       
+        background-image: $degradeR;       
+        &:hover{         
         transform: scale(1.1);
         }
     }
@@ -109,7 +109,7 @@ footer {
     .backbutton{
         width: 5%;
         opacity: 0.5;
-        transition-duration: 1s;
+        @include transitionProps();
         &:hover{
             opacity: 1;
         }   

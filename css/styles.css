@@ -110,13 +110,14 @@ header h1 {
   font-size: 6rem;
   text-align: "center";
   text-decoration: none;
-  color: #b3426d;
+  color: #d64d74;
   margin: 1%;
   animation: fadeInRight 1s;
 }
 
 nav {
-  background-image: linear-gradient(rgba(158, 57, 85, 0.8), rgba(250, 156, 182, 0.8));
+  background-image: linear-gradient(rgb(158, 57, 85), rgb(250, 156, 182));
+  opacity: 0.8;
   padding-top: 3px;
   top: 0;
   padding: 3px auto 0;
@@ -147,6 +148,10 @@ nav ul li a {
   text-decoration: none;
   color: white !important;
   margin: 0;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
   color: white !important;
 }
 nav ul li a:hover {
@@ -177,7 +182,10 @@ footer img {
   justify-content: center;
   margin: 2% 3%;
   width: 5%;
-  transition-duration: 0.4s;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 footer img:hover {
   transform: scale(1.1);
@@ -187,20 +195,23 @@ footer a {
 }
 
 button {
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
+  background-image: linear-gradient(rgb(158, 57, 85), rgb(250, 156, 182));
 }
 button:hover {
-  background-color: #d3708c;
   transform: scale(1.1);
 }
 
 .backbutton {
   width: 5%;
   opacity: 0.5;
-  transition-duration: 1s;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 .backbutton:hover {
   opacity: 1;
@@ -357,9 +368,9 @@ form select {
   padding: 1% 4%;
   margin: 0 2%;
   color: black !important;
-  background-color: #d3708c !important;
+  background-color: linear-gradient(rgb(158, 57, 85), rgb(250, 156, 182)) !important;
   transition-property: all !important;
-  transition-duration: 0.3s !important;
+  transition-duration: 0.4s !important;
   transition-timing-function: ease !important;
   transition-delay: 0s !important;
 }
@@ -370,6 +381,16 @@ form select {
 .blog-article p {
   font-size: 0.65rem;
   line-height: 1rem;
+}
+
+#tituloArticulo {
+  font-family: "Klee";
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #46304d;
+  margin: 2%;
+  border-bottom: 1px solid black;
 }
 
 .profe {
@@ -448,10 +469,10 @@ form select {
   background-color: rgba(255, 255, 255, 0.5) !important;
   border-radius: 4%;
   padding: 1%;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 .certificado h1 {
   font-family: "Delius";
@@ -468,10 +489,10 @@ form select {
 
 .carousel {
   padding: 1%;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 .carousel img {
   width: 100% !important;
@@ -513,10 +534,10 @@ form select {
 }
 .ejercicios section img {
   padding: 1%;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+  transition-property: all !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 .ejercicios article {
   padding: 3% 2%;

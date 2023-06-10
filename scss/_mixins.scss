@@ -7,3 +7,10 @@
     color: $color;
     margin:$margin;
 }
+
+@mixin transitionProps(){
+    transition-property:all !important;
+    transition-duration: 0.4s !important;
+    transition-timing-function: ease !important;
+    transition-delay: 0s !important; 
+}

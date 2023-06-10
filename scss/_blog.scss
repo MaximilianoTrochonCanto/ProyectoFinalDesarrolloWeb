@@ -48,11 +48,8 @@
     padding: 1% 4%;
     margin: 0 2%;  
     color: black !important; 
-    background-color:  map-get($colores,rosado)!important;  
-    transition-property:all !important;
-    transition-duration: 0.3s !important;
-    transition-timing-function: ease !important;
-    transition-delay: 0s !important;   
+    background-color: $degradeR !important;  
+    @include transitionProps();  
 }
 
 .blog-article{
@@ -61,4 +58,9 @@
         font-size: 0.65rem;
         line-height: 1rem;
     }    
+}
+
+#tituloArticulo{    
+        @include textos("Klee",40px,center,none,#46304d,2%);  
+        border-bottom: $lineaNegra;  
 }

@@ -96,10 +96,7 @@
     background-color: map-get($colores,whitransparent) !important;
     border-radius: 4%;
     padding: 1%;                
-    transition-property:all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s; 
+    @include transitionProps();
 
     h1{
         @include textos("Delius",1rem,center,none,map-get($colores,morado2),0);

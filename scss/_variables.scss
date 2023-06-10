@@ -1,8 +1,8 @@
 @import "maps";
 
 $lineaNegra: 1px solid black;
-$degradeH:linear-gradient(map-get($colores,rosadoTransparente1),map-get($colores,rosadoTransparente2)); 
-$degradeF:radial-gradient(ellipse 750px 120px,map-get($colores,lila),map-get($colores,lila2));
+$degradeR:linear-gradient(map-get($colores,rosado3),map-get($colores,rosado4)); 
+$degradeM:radial-gradient(ellipse 750px 120px,map-get($colores,lila),map-get($colores,lila2));
 $md:769px;
 $sm:680px;
 $xs:375px;
