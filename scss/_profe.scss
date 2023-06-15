@@ -14,10 +14,12 @@
     }
 
     p{
-        font-family: 'Roboto'  
+        font-family: 'Roboto';  
+        letter-spacing: .5px;
+        line-height: 160%
     }
 
-    h1{
+    h2{
         @include textos("Solitreo",40px,center,none,map-get($colores,morado),0);        
         border-bottom: 1px solid map-get($colores,morado);
         margin-bottom: 4%;        
@@ -70,11 +72,12 @@
     
 
 
-    h1{
-        letter-spacing: 2px;    
+    h2{
+        
         color: map-get($colores,morado2);
         font-family: "Delius";    
-        
+        font-size: 3rem;
+        margin-bottom: 1%;
     }
 
     img{
@@ -84,9 +87,7 @@
 
     article {
         width: 32%;   
-        h1{
-            font-size:40%;
-        }      
+            
     }
 }
 
@@ -98,10 +99,17 @@
     padding: 1%;                
     @include transitionProps();
 
-    h1{
+    h2, h3 {
         @include textos("Delius",1rem,center,none,map-get($colores,morado2),0);
         letter-spacing: 2px;            
     }
+
+    h3{
+        font-size: 1rem;
+    }
+
+
+    
 
     &:hover{
         transform: scale(1.3)

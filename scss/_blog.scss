@@ -14,7 +14,7 @@
             line-height: 2.5rem;
             border-radius: 2%;            
             
-            h1{
+            h2{
                 @include textos("Klee",20px,center,none,#46304d,0);           
             border-bottom: $lineaNegra;           
         }

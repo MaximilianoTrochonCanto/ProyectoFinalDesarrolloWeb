@@ -45,10 +45,14 @@
 
     section{ 
         
-        h1{                
+        h2, h3{                
         @include textos("Solitreo",40px,center,underline,black,none);
         border-bottom: $lineaNegra;                                        
-    }
+        }
+
+        h3{
+            font-size: 30px;
+        }
 
         img{
         padding: 1%;                
