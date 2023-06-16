@@ -4,6 +4,7 @@ $lineaNegra: 1px solid black;
 $degradeRT:linear-gradient(rgb(158, 57, 85,.7),rgba(250, 156, 182,.7)); 
 $degradeR:linear-gradient(map-get($colores,rosado3),map-get($colores,rosado4)); 
 $degradeM:radial-gradient(ellipse 750px 120px,map-get($colores,lila),map-get($colores,lila2));
+$degradeR2:linear-gradient(140deg,map-get($colores,rosado-claro),map-get($colores,rosado4),map-get($colores,rosado),map-get($colores,rosado3));
 $md:769px;
 $sm:680px;
 $xs:375px;

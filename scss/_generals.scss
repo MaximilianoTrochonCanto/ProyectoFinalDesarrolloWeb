@@ -59,7 +59,7 @@ nav{
     
 } 
 
-body{
+.bodyballerobica, .bodyprofesora{
         
     @include fondo(url(../images/background.png));    
     background-position-x: 100%;
