@@ -13,36 +13,40 @@
     
     background-image: $degradeR2;
 
-    min-height: 100vh;
+    min-height: 95vh;
     
     
     main{
-        padding: 2vh;
-        background-color: rgba($color: #000000, $alpha: 0);
+        margin-top: 3vh;
+        
+
         h1{
-            @include textos('Roboto',24rem,center,none,black,0);
+            @include textos('Roboto',320px,center,none,black,0);
             animation: fadeInRight 2s;            
-            @include fondo(url(../images/Sunset.jpg));
+             background:url(../images/Sunset.jpg) local no-repeat;
             -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
+             -webkit-background-clip: text;
+             background-clip: none;            
+            
+            
             
         }
 
         h2{
-            @include textos('Klee',2rem,center,none,black,0);
-            line-height: 10vh;
+            line-height: 11vh;
+            @include textos('Klee',2rem,center,none,black,0);            
             color: map-get($colores, morado);
         }
 
         a{
             text-decoration: none;
             
+
             h3{
-                @include textos('Klee',2rem,center,none,map-get($colores, morado2),0);
-                margin-top: 3px;
+                @include textos('Klee',2rem,center,none,map-get($colores, morado2),0);                
                 animation:zoomIn2 3s;
                 animation-iteration-count: infinite;
+                padding-bottom: 3vh;
             }
         }
         }
