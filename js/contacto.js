@@ -14,7 +14,7 @@ function enviarEmail(e){
     emailjs.send(serviceID,templateID,params)
      .then(
         console.log(params.telefono),
-         alert("El mensaje enviado. En seguida nos contactaremos contigo!"),
+         alert(`Gracias ${params.nombre} por contactarnos. El mensaje fue enviado. En seguida nos contactaremos contigo!`),
          document.querySelector('#form').reset()
          )
          .catch((error) => alert(error));
