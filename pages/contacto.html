@@ -14,11 +14,11 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
    (function(){
       emailjs.init("TRD799CX2xIR_JS-p");
    })();
-</script>       
+</script>        -->
 </head>
 <body class="bodycontacto">
     <header class="d-none d-lg-block container-fluid">
@@ -90,7 +90,7 @@
                     <div class="mx-2">
                         <div class="m-1">
                             <label for="inputEmail" class="col-form-label">Email* </label>                    
-                            <input type="email" class="form-control" id="email">                    
+                            <input type="text" class="form-control" id="email">                    
                         </div>
                         <label for="textarea" class="col-form">Comentarios </label>
                     <textarea name="textarea" class="form-control" id="comentarios"></textarea>
@@ -98,7 +98,9 @@
                     
                 </div>
                 <div class="text-center">
-                    <button class="mt-4 col-3" id="btnEnviar" onclick="enviarEmail(event)" >Enviar</button>
+                    <button class="mt-4 col-3" id="btnEnviar" onclick="enviarEmail(
+                        // event
+                        )" >Enviar</button>
                 </div>                  
                 </form>                
         </section>                
