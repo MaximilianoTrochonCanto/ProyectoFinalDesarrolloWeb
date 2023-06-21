@@ -328,6 +328,9 @@ footer a:nth-of-type(3) {
   }
 }
 @media (max-width: 992px) {
+  .ejercicios, .blog {
+    background-image: url(../images/Foto1.jpg);
+  }
   .profe__foto {
     display: none;
   }
@@ -361,6 +364,11 @@ footer a:nth-of-type(3) {
   }
   .certificado:hover {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 992px) and (min-width: 769px) {
+  .bodyballerobica {
+    background-position-x: -800px;
   }
 }
 @media (max-width: 680px) and (min-width: 375px) {
@@ -416,9 +424,6 @@ footer a:nth-of-type(3) {
   .blog,
   .ejercicios {
     backdrop-filter: blur(2px);
-  }
-  .blog {
-    background-image: url(../images/Foto1.jpg);
   }
   .bodyballerobica, .bodyprofesora, .ejercicios {
     background-image: url(../images/BackgroundMobile1.png);
@@ -979,6 +984,9 @@ form select {
   }
 }
 @media (max-width: 992px) {
+  .ejercicios, .blog {
+    background-image: url(../images/Foto1.jpg);
+  }
   .profe__foto {
     display: none;
   }
@@ -1012,6 +1020,11 @@ form select {
   }
   .certificado:hover {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 992px) and (min-width: 769px) {
+  .bodyballerobica {
+    background-position-x: -800px;
   }
 }
 @media (max-width: 680px) and (min-width: 375px) {
@@ -1067,9 +1080,6 @@ form select {
   .blog,
   .ejercicios {
     backdrop-filter: blur(2px);
-  }
-  .blog {
-    background-image: url(../images/Foto1.jpg);
   }
   .bodyballerobica, .bodyprofesora, .ejercicios {
     background-image: url(../images/BackgroundMobile1.png);
@@ -1294,6 +1304,9 @@ form select {
   }
 }
 @media (max-width: 992px) {
+  .ejercicios, .blog {
+    background-image: url(../images/Foto1.jpg);
+  }
   .profe__foto {
     display: none;
   }
@@ -1327,6 +1340,11 @@ form select {
   }
   .certificado:hover {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 992px) and (min-width: 769px) {
+  .bodyballerobica {
+    background-position-x: -800px;
   }
 }
 @media (max-width: 680px) and (min-width: 375px) {
@@ -1382,9 +1400,6 @@ form select {
   .blog,
   .ejercicios {
     backdrop-filter: blur(2px);
-  }
-  .blog {
-    background-image: url(../images/Foto1.jpg);
   }
   .bodyballerobica, .bodyprofesora, .ejercicios {
     background-image: url(../images/BackgroundMobile1.png);

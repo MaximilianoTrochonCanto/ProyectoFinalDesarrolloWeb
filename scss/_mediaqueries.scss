@@ -45,7 +45,9 @@
 
 @media (max-width: $lg){
        
-    
+        .ejercicios, .blog{
+            background-image: url(../images/Foto1.jpg);;
+        }
 
         .profe__foto{
             display: none;
@@ -105,8 +107,14 @@
             }
         }
     
+        
     }
     
+    @media (max-width:$lg) and (min-width:$md){
+        .bodyballerobica{
+            background-position-x: -800px;
+        }
+    }
     
     
     @media (max-width:$sm) and (min-width:$xs){
@@ -220,9 +228,6 @@
             backdrop-filter: blur(2px);
         }
     
-        .blog{
-            background-image: url(../images/Foto1.jpg);
-        }
     
         .bodyballerobica, .bodyprofesora, .ejercicios{
             background-image: url(../images/BackgroundMobile1.png);
