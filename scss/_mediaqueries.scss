@@ -1,5 +1,19 @@
 @import "variables";
 
+
+
+    .video{
+        @media (min-width: $xs){
+            margin-bottom: 40%;
+        }
+    
+        @media (max-width: $xs){
+            margin-bottom: 80%;                   
+        }
+
+
+    }
+    
 @media (min-width:($lg)) {
     
     .blog-grid{       
@@ -210,11 +224,13 @@
             background-image: url(../images/Foto1.jpg);
         }
     
-        body{
+        .bodyballerobica, .bodyprofesora, .ejercicios{
             background-image: url(../images/BackgroundMobile1.png);
+            
+            backdrop-filter: none;
         }
     
-        .ejercicios, .bodycontacto{
+         .bodycontacto{
             background-image: url(../images/Background-mobile2.jpg);
             background-attachment: scroll;
         }
@@ -229,7 +245,7 @@
     }
     
         .ballerobica{
-            h1{
+            h1, h2{
                 color: #501c2b;
                 font-size: 30px;
             }
@@ -316,7 +332,14 @@
         }
         
         .errorpage{
-            
+         
+            @media (max-width:700px){
+             
+                h1{
+                    font-size: 9rem !important;
+                }
+                
+            }
             
             @media (max-width:950px){
                 h2{
@@ -365,8 +388,20 @@
                 h2{
                     font-size: .6rem !important;
                 }
+
+                
             }
+
+            
+            
 
         }
 
 
+        @media (max-width:490px){
+            .bodyballerobica, .bodyprofesora
+            {
+                
+                background-position-x: -600px;
+            }
+        }        

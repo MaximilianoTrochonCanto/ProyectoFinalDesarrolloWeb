@@ -1,5 +1,5 @@
 @import 'variables';
-
+@import 'mediaqueries';
 
 
 
@@ -82,7 +82,7 @@
 
 .video{
     height: 50%;
-    margin-bottom: 40%;
+    
     h2{
     border-bottom: none;
     animation:zoomIn2 3s;
@@ -90,3 +90,4 @@
     }
 
 }
+

@@ -225,7 +225,7 @@ nav ul li a:hover {
   background-image: url(../images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   background-position-x: 100%;
   background-position-y: -5px;
 }
@@ -296,6 +296,243 @@ footer a:nth-of-type(3) {
   animation-delay: 2.25s;
 }
 
+@media (min-width: 375px) {
+  .video {
+    margin-bottom: 40%;
+  }
+}
+@media (max-width: 375px) {
+  .video {
+    margin-bottom: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-grid .blog-article:first-child {
+    grid-row: 1/3;
+    grid-column: 1;
+  }
+  .blog-grid .blog-article:nth-child(4) {
+    grid-row: 1;
+    grid-column: 2;
+    height: 100%;
+  }
+  .blog-grid .blog-article:nth-child(3) {
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 1fr;
+  }
+  .blog-grid .blog-article:nth-child(2) {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 992px) {
+  .profe__foto {
+    display: none;
+  }
+  .profe__article__last {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .blog-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 24% 32% 24% 20%;
+    padding-bottom: 10%;
+  }
+  .blog-article {
+    font-size: smaller;
+  }
+  .blog button {
+    margin: 0;
+  }
+  .navbar-collapse {
+    border-top: 1px solid white;
+  }
+  .nav ul li {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+  }
+  .blog main {
+    padding-bottom: 50px;
+  }
+  .nav-item {
+    font-size: 1rem !important;
+  }
+  .certificado:hover {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 680px) and (min-width: 375px) {
+  nav h1 {
+    font-size: 2rem !important;
+  }
+  nav ul li a {
+    font-size: 2rem !important;
+  }
+  .blog main {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  nav h1 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .blog main {
+    padding-bottom: 50px;
+  }
+  .blog article p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 253px) {
+  .blog section article h1,
+  .blog section article h1 {
+    font-size: xx-small;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  body {
+    backdrop-filter: blur(2px);
+  }
+}
+@media (min-width: 769px) {
+  .ballerobica h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 2000px) {
+  nav ul li a {
+    font-size: 50px !important;
+  }
+  header h1 {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 768px) and (min-width: 300px) {
+  body,
+  .blog,
+  .ejercicios {
+    backdrop-filter: blur(2px);
+  }
+  .blog {
+    background-image: url(../images/Foto1.jpg);
+  }
+  .bodyballerobica, .bodyprofesora, .ejercicios {
+    background-image: url(../images/BackgroundMobile1.png);
+    backdrop-filter: none;
+  }
+  .bodycontacto {
+    background-image: url(../images/Background-mobile2.jpg);
+    background-attachment: scroll;
+  }
+  .carousel:hover {
+    margin-bottom: 4%;
+    margin-top: 2%;
+  }
+  .ballerobica h1, .ballerobica h2 {
+    color: #501c2b;
+    font-size: 30px;
+  }
+}
+@media (max-width: 769px) {
+  footer img {
+    width: 10%;
+  }
+  .video {
+    height: 40%;
+  }
+  .ejercicios article p {
+    font-size: x-small;
+  }
+}
+@media (max-width: 444px) and (min-width: 370px) {
+  nav h1 {
+    font-size: 1.75rem !important;
+  }
+}
+@media (max-width: 500px) and (min-width: 450px) {
+  .blog-grid {
+    grid-template-rows: 24% 31% 24% 22%;
+  }
+}
+@media (max-width: 451px) {
+  .formsection button {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 451px) and (min-width: 320px) {
+  .blog-grid {
+    grid-template-rows: 27% 35% 23% 18%;
+    margin-bottom: 40px;
+  }
+  .formsection {
+    height: 120vh;
+  }
+}
+@media (max-width: 342px) {
+  .formsection {
+    height: 140vh;
+  }
+}
+@media (max-width: 700px) {
+  .errorpage h1 {
+    font-size: 9rem !important;
+  }
+}
+@media (max-width: 700px) {
+  .errorpage h1 {
+    font-size: 9rem !important;
+  }
+}
+@media (max-width: 950px) {
+  .errorpage h2 {
+    font-size: 1.5rem !important;
+  }
+  .errorpage h1 {
+    font-size: 18rem !important;
+  }
+  .errorpage h3 {
+    margin-top: 7vh !important;
+  }
+}
+@media (max-width: 731px) {
+  .errorpage h2 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 691px) {
+  .errorpage h1 {
+    font-size: 14rem !important;
+  }
+}
+@media (max-width: 511px) {
+  .errorpage h2 {
+    font-size: 0.8rem !important;
+  }
+  .errorpage h1 {
+    font-size: 11rem !important;
+  }
+  .errorpage h3 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 410px) {
+  .errorpage h1 {
+    font-size: 8rem !important;
+  }
+  .errorpage h2 {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .bodyballerobica, .bodyprofesora {
+    background-position-x: -600px;
+  }
+}
 .ballerobica {
   line-height: 180%;
   padding: 3%;
@@ -405,7 +642,6 @@ footer a:nth-of-type(3) {
 
 .video {
   height: 50%;
-  margin-bottom: 40%;
 }
 .video h2 {
   border-bottom: none;
@@ -417,7 +653,7 @@ footer a:nth-of-type(3) {
   background-image: url(../images/background2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   background-attachment: fixed;
 }
 
@@ -480,7 +716,7 @@ form select {
   background-image: url(../images/Background4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 .blog section {
   padding: 1% 6%;
@@ -655,7 +891,7 @@ form select {
   background-image: url(../images/background3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   background-attachment: fixed;
   font-family: "Roboto";
 }
@@ -709,6 +945,17 @@ form select {
 .ejercicios article div img {
   width: 70%;
   border-radius: 4%;
+}
+
+@media (min-width: 375px) {
+  .video {
+    margin-bottom: 40%;
+  }
+}
+@media (max-width: 375px) {
+  .video {
+    margin-bottom: 80%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -824,10 +1071,11 @@ form select {
   .blog {
     background-image: url(../images/Foto1.jpg);
   }
-  body {
+  .bodyballerobica, .bodyprofesora, .ejercicios {
     background-image: url(../images/BackgroundMobile1.png);
+    backdrop-filter: none;
   }
-  .ejercicios, .bodycontacto {
+  .bodycontacto {
     background-image: url(../images/Background-mobile2.jpg);
     background-attachment: scroll;
   }
@@ -835,7 +1083,7 @@ form select {
     margin-bottom: 4%;
     margin-top: 2%;
   }
-  .ballerobica h1 {
+  .ballerobica h1, .ballerobica h2 {
     color: #501c2b;
     font-size: 30px;
   }
@@ -885,6 +1133,11 @@ form select {
     font-size: 9rem !important;
   }
 }
+@media (max-width: 700px) {
+  .errorpage h1 {
+    font-size: 9rem !important;
+  }
+}
 @media (max-width: 950px) {
   .errorpage h2 {
     font-size: 1.5rem !important;
@@ -926,6 +1179,11 @@ form select {
   }
 }
 
+@media (max-width: 490px) {
+  .bodyballerobica, .bodyprofesora {
+    background-position-x: -600px;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1004,6 +1262,17 @@ form select {
   font-family: "KalamBold";
   src: url(../fonts/Kalam-Bold.ttf);
 }
+@media (min-width: 375px) {
+  .video {
+    margin-bottom: 40%;
+  }
+}
+@media (max-width: 375px) {
+  .video {
+    margin-bottom: 80%;
+  }
+}
+
 @media (min-width: 992px) {
   .blog-grid .blog-article:first-child {
     grid-row: 1/3;
@@ -1117,10 +1386,11 @@ form select {
   .blog {
     background-image: url(../images/Foto1.jpg);
   }
-  body {
+  .bodyballerobica, .bodyprofesora, .ejercicios {
     background-image: url(../images/BackgroundMobile1.png);
+    backdrop-filter: none;
   }
-  .ejercicios, .bodycontacto {
+  .bodycontacto {
     background-image: url(../images/Background-mobile2.jpg);
     background-attachment: scroll;
   }
@@ -1128,7 +1398,7 @@ form select {
     margin-bottom: 4%;
     margin-top: 2%;
   }
-  .ballerobica h1 {
+  .ballerobica h1, .ballerobica h2 {
     color: #501c2b;
     font-size: 30px;
   }
@@ -1178,6 +1448,11 @@ form select {
     font-size: 9rem !important;
   }
 }
+@media (max-width: 700px) {
+  .errorpage h1 {
+    font-size: 9rem !important;
+  }
+}
 @media (max-width: 950px) {
   .errorpage h2 {
     font-size: 1.5rem !important;
@@ -1219,6 +1494,11 @@ form select {
   }
 }
 
+@media (max-width: 490px) {
+  .bodyballerobica, .bodyprofesora {
+    background-position-x: -600px;
+  }
+}
 .errorpage {
   text-align: center;
   background-image: linear-gradient(140deg, #fccfdb, rgb(250, 156, 182), #d3708c, rgb(158, 57, 85));
