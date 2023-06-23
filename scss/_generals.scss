@@ -9,17 +9,25 @@
     margin: 0 auto;
     animation: fadeIn 1.5s;
     font-family: 'Roboto';
+    
+}
+
+body{
+    overflow-x: hidden;
 }
 
 header{
     background-color: rgb(252.5, 217.5, 180, .3) !important;
-    padding: 5px 0 10px 0;
-    text-align: center;    
+    padding-top: 5px;
+    text-align: center;   
+     
 
     h1{
-        @include textos('Parisiene',6rem,'center',none,map-get($colores,rosado3),1%);                
+        @include textos('Parisiene',6rem,'center',none,map-get($colores,rosado3),0);
+        margin-bottom: 0; 
         animation: fadeInRight 1s;
-       
+        overflow-y: hidden;
+        padding-bottom: 2%;
     }
 }
 

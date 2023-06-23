@@ -70,8 +70,9 @@
         
 
     h2{
-    font-family: "Parisiene";
-    font-size: 7vh;
+    font-family: "Solitreo";
+    padding-top: 1%;
+    font-size: 5vh;
     border-bottom: $lineaNegra;
     
     }
@@ -84,6 +85,8 @@
     height: 50%;
     
     h2{
+    
+    margin-bottom: 1px;
     border-bottom: none;
     animation:zoomIn2 3s;
     animation-iteration-count: infinite;

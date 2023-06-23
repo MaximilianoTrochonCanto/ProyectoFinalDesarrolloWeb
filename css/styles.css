@@ -162,9 +162,13 @@
   font-family: "Roboto";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: rgba(253, 218, 180, 0.3) !important;
-  padding: 5px 0 10px 0;
+  padding-top: 5px;
   text-align: center;
 }
 header h1 {
@@ -173,8 +177,11 @@ header h1 {
   text-align: "center";
   text-decoration: none;
   color: rgb(158, 57, 85);
-  margin: 1%;
+  margin: 0;
+  margin-bottom: 0;
   animation: fadeInRight 1s;
+  overflow-y: hidden;
+  padding-bottom: 2%;
 }
 
 nav {
@@ -640,8 +647,9 @@ footer a:nth-of-type(3) {
   position: relative;
 }
 .ballerobica__card h2 {
-  font-family: "Parisiene";
-  font-size: 7vh;
+  font-family: "Solitreo";
+  padding-top: 1%;
+  font-size: 5vh;
   border-bottom: 1px solid black;
 }
 
@@ -649,6 +657,7 @@ footer a:nth-of-type(3) {
   height: 50%;
 }
 .video h2 {
+  margin-bottom: 1px;
   border-bottom: none;
   animation: zoomIn2 3s;
   animation-iteration-count: infinite;
@@ -877,9 +886,6 @@ form select {
 .certificado h3 {
   font-size: 1rem;
 }
-.certificado:hover {
-  transform: scale(1.3);
-}
 
 .carousel {
   padding: 1%;
@@ -917,7 +923,7 @@ form select {
   color: rgb(43, 42, 42);
 }
 .ejercicios img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .ejercicios section h2, .ejercicios section h3 {
   font-family: "Solitreo";
