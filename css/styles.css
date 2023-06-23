@@ -1541,7 +1541,7 @@ form select {
 .errorpage {
   text-align: center;
   background-image: linear-gradient(140deg, #fccfdb, rgb(250, 156, 182), #d3708c, rgb(158, 57, 85));
-  min-height: 95vh;
+  min-height: 100vh;
 }
 .errorpage main {
   margin-top: 3vh;
