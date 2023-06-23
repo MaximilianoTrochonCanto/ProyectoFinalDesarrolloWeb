@@ -12,9 +12,10 @@
     
 }
 
-body, footer{
+body, html{
     overflow-x: hidden;
 }
+
 
 header{
     background-color: rgb(252.5, 217.5, 180, .3) !important;
@@ -81,7 +82,7 @@ main{
 }
 
 footer {    
-    
+    width:100%;
      img{
         align-items: center;
         justify-content: center;

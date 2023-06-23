@@ -162,7 +162,7 @@
   font-family: "Roboto";
 }
 
-body {
+body, html {
   overflow-x: hidden;
 }
 
@@ -243,6 +243,7 @@ main {
 }
 
 footer {
+  width: 100%;
   background: radial-gradient(ellipse 750px 120px, #c7bfe9, #5643a1);
 }
 footer img {
