@@ -459,11 +459,14 @@ button:hover {
   }
 }
 @media (max-width: 769px) {
-  footer img {
+  .redessociales img {
     width: 10%;
   }
   .video {
     height: 40%;
+  }
+  .copyright p {
+    font-size: xx-small;
   }
   .ejercicios article p {
     font-size: x-small;
@@ -1114,11 +1117,14 @@ form select {
   }
 }
 @media (max-width: 769px) {
-  footer img {
+  .redessociales img {
     width: 10%;
   }
   .video {
     height: 40%;
+  }
+  .copyright p {
+    font-size: xx-small;
   }
   .ejercicios article p {
     font-size: x-small;
@@ -1434,11 +1440,14 @@ form select {
   }
 }
 @media (max-width: 769px) {
-  footer img {
+  .redessociales img {
     width: 10%;
   }
   .video {
     height: 40%;
+  }
+  .copyright p {
+    font-size: xx-small;
   }
   .ejercicios article p {
     font-size: x-small;

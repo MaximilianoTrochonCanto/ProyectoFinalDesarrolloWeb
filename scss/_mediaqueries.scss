@@ -261,7 +261,7 @@
     
     @media (max-width:$md){
         
-        footer{
+        .redessociales{
             img{
                 width: 10%;
             }
@@ -271,7 +271,11 @@
             height: 40%;
         }
     
-    
+        .copyright{
+            p{
+                font-size: xx-small;
+            }
+        }
     
         .ejercicios{ 
             article{
