@@ -119,7 +119,7 @@ footer {
     }
 
     @for $i from 1 through 3 {
-        footer{         
+        .redessociales{         
             a{
                 &:nth-of-type(#{$i}) {            
                 animation: fadeIn 0.3s;
@@ -129,4 +129,17 @@ footer {
             }
         }
       
+    }
+
+    
+
+    
+
+    .copyright{
+        margin-top: 3px;
+        
+        bottom:-1px;
+        p{
+            font-size: x-small;
+        }
     }

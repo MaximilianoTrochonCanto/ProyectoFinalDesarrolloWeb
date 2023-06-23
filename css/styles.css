@@ -286,22 +286,30 @@ button:hover {
   opacity: 1;
 }
 
-footer a:nth-of-type(1) {
+.redessociales a:nth-of-type(1) {
   animation: fadeIn 0.3s;
   animation-fill-mode: both;
   animation-delay: 0.75s;
 }
 
-footer a:nth-of-type(2) {
+.redessociales a:nth-of-type(2) {
   animation: fadeIn 0.3s;
   animation-fill-mode: both;
   animation-delay: 1.5s;
 }
 
-footer a:nth-of-type(3) {
+.redessociales a:nth-of-type(3) {
   animation: fadeIn 0.3s;
   animation-fill-mode: both;
   animation-delay: 2.25s;
+}
+
+.copyright {
+  margin-top: 3px;
+  bottom: -1px;
+}
+.copyright p {
+  font-size: x-small;
 }
 
 @media (min-width: 375px) {
